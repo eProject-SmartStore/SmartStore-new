@@ -1,0 +1,488 @@
+html {
+    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 1200px; */
+    line-height: 1.4285;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0px auto;
+}
+
+*{
+    margin:  0px auto;
+}
+
+.bc-white {
+    background-color: #fff !important;
+    z-index: 1000;
+}
+
+/*header */
+#header {
+    width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#header .logo {
+    float: left;
+    margin: 0px;
+}
+
+#header .up {
+    display: flex;
+}
+
+#header .search {
+    display: flex;
+}
+
+#header .search-icon {
+    margin: 25px 0px 20px 5px;
+
+}
+
+#header input[type="text"] {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid rgb(153, 153, 153);
+    appearance: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px 0px 0px;
+    margin: 20px 0px 20px 0px;
+}
+
+#header .list ul {
+    display: flex;
+    border-top: solid 1px #003f62;
+    border-bottom: solid 1px #003f62;
+    padding: 5px;
+}
+
+#header .icon {
+    margin: 20px 0px 20px 0px;
+    
+}
+
+#header .icon a {
+    padding: 10px;
+}
+
+#header .list li {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+#header .list li:hover {
+    opacity: 1;
+
+}
+
+
+/*Big Topic */
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#wrapper .container{
+    height: 450px;
+    width: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #65b4df
+;
+}
+
+#wrapper .card_big_topic{
+    padding-left: 10px;
+}
+
+#wrapper .big_topic{
+    background-image: url("../img/TOP-15-trang-web-noi-that-nuoc-ngoai-noi-tieng-tren-the-gioi-nam-2020.jpg");
+    background-size: 100% 452px;
+    height: 450px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Related products */
+#related-products {
+    width: 1200px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+}
+
+#related-products div.one{
+    margin: auto;
+    background-color: rgb(190, 219, 236);
+    
+}
+#related-products p.two {
+    margin-top: -6px;
+    color: rgb(55, 20, 255);
+    font-size: 25px;
+}
+#related-products div.one.version2 {
+    background-color: rgb(190, 219, 236);
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* event */
+#event{
+    /* background-color: #6ac0ee; */
+    width: 1200px;
+    /* height: 500px; */
+    text-align: center;
+    margin: 0px auto;
+    animation: modalFaceIn ease 1s;
+}
+#event .event-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+#event > h1 {
+    padding: 20px 0 40px 0;
+}
+
+#event figcaption {
+    padding: 15px;
+}
+
+#chri {
+    text-align: center;
+    float: left;
+}
+
+#new{
+    text-align: center;
+    float: right;
+} 
+
+/* brand */
+#brand {
+    width: 1200px;
+    margin: 0px auto;
+    /* background-color: rgb(198, 234, 255); */
+    background-color: #65b4df; 
+    text-align: center;    
+}
+#brand .brand-name{
+    padding: 20px 20px 10px 20px;
+    animation: modalFaceIn ease 1s;
+}
+
+#brand .brand-product{
+    width: 97.5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px 30px 0px;
+}  
+
+#brand .product-representative {
+    flex-basis: 30%;
+    display: block;
+    animation: modalFaceIn ease 1s;
+}
+#brand .product-representative:hover {
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    animation: modalFaceIn ease 1s;
+    text-decoration: underline;
+}
+
+
+#brand .representative-content {
+    margin: 10px 0;
+    font-size: 95%;
+    justify-content: center;
+    animation: modalFaceIn ease 1s;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+a {
+    text-decoration:none;
+    color: #000 !important;
+}
+
+@keyframes modalFaceIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* now trending */ 
+#now-trending {
+    text-align: center;
+    background-color: #ccc;
+    width: 1200px;
+}
+
+#now-trending div.one{
+    margin-right: 10px;
+    display: flex;
+
+}
+#now-trending div.one.vosion2{
+/* border: 5px inset deeppink; */
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-x: hidden;
+}
+#now-trending h1{
+    padding-top: 15px;
+}
+
+
+
+#wrapper-items{
+    width: 1200px;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+    display: flex;
+    margin: 0px auto;
+}
+
+#wrapper-items .content{
+    height: 365px;
+    width: 254px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #4986af;
+}
+#wrapper-items .content-h3 {
+    margin-top: 155px ;
+}
+
+
+#wrapper-items .products{
+    background-color: #99FFFF;
+    height: 345px;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+
+#wrapper-items .products ul {
+    display: inline-block;
+}
+
+#wrapper-items .products ul .main-product {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    display: block;
+    float: left;
+    width: 24%;
+}
+
+#wrapper-items .products ul .no-margin {
+    margin-right: 0;
+}
+
+#wrapper-items .products ul .img-product img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#wrapper-items .content-product .content-product-h3 {
+    overflow: hidden;
+    color: #222;
+    font-weight: 500;
+    font-size: 16px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+#wrapper-items .content-product .content-product-deltals {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+#wrapper-items .main-product .content-product .content-product-deltals .price {
+    color: #222222;
+    font-weight: 700;
+    margin-right: 1rem;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+
+
+#wrapper-items .content-product .content-product-deltals .btn-cart {
+    background: #ffffff	;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 500;
+}
+
+#wrapper-items .content-product .content-product-deltals .btn-cart:hover {
+    background: #0a669b;
+}
+
+/*trending */ 
+#trending {
+    width: 1200px;
+    height: 390px;
+    margin: 30px auto;
+    background-color: #ccc;
+}
+
+#trending .store{
+    display:flex;
+    justify-content: space-between;
+    margin: 0.6em;
+    border-radius: 5px;
+    box-shadow: none;
+}
+a, a:active, a:hover {
+    cursor: pointer!important;
+}
+#trending a {
+    color: #a1b5ff;
+    outline: 0;
+    overflow: hidden;
+    text-decoration: none;
+    background: 0 0;
+}
+#trending .titles{
+    text-align: center;
+    color: #000000;
+}
+#trending .title{
+    text-align: center;
+    color: #000000;
+}
+#trending .container{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}   
+#trending .thumn{
+    margin-top: -58px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 1.5em 3em 1em 3em;
+} 
+
+/*footer */
+#footer {
+    /* height: 1000px; */
+    /* color: #fff; */
+}
+
+#footer .logo-brand {
+    background-color: #65b4df; 
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#footer .logo-brand > a {
+    margin-left: 70px;
+}
+
+#footer .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0a669b;
+    padding: 20px;
+    line-height: 2;
+}
+
+#footer .footer-content h4 {
+    color: #000;
+    margin-left: 40px;
+}
+
+#footer .logo-social-payments h3 {
+    color: #000;
+}
+
+#footer li:hover {
+    text-decoration: underline;
+}
+
+#footer .follow-icon > img {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Contact Us */
+#contact-Us .contactUs{
+    display: flex;
+    width: 1200px;
+    height: 480px;
+    margin: 0px auto;
+}
+
+#contact-Us > h1 {
+    text-align: center;
+    color: #003f62;
+    padding: 20px;
+}
+
+#contact-Us .contactUs-content {
+    width: 600px;
+    height: 450px;
+    background-color: #003f62;
+    line-height: 2;
+}
+
+#contact-Us .contactUs-content  h4 {
+    color: #fff;
+    margin: 0 0 15px 30px;
+}
+
+#contact-Us .contactUs-content ul {
+    color: #ccc;
+}
+
+.m-130-0-130-30 {
+    margin: 130px 0 130px 30px;  
+}
+
+li {
+    list-style: none;
+}
+
