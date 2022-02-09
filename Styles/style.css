@@ -31,10 +31,6 @@ body {
     margin-bottom: 10px;
 }
 
-#header a:hover {
-    text-decoration: underline;
-}
-
 #header .logo {
     float: left;
     margin: 0px;
@@ -87,7 +83,7 @@ body {
 
 #header .list li:hover {
     opacity: 1;
-
+    text-decoration: underline;
 }
 
 
