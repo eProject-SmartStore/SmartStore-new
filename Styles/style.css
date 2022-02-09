@@ -99,25 +99,64 @@ body {
     display: flex;
 }
 
-#wrapper .container{
-    height: 450px;
-    width: 320px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #65b4df
-;
-}
-
-#wrapper .card_big_topic{
-    padding-left: 10px;
-}
-
-#wrapper .big_topic{
-    background-image: url("../img/TOP-15-trang-web-noi-that-nuoc-ngoai-noi-tieng-tren-the-gioi-nam-2020.jpg");
-    background-size: 100% 452px;
-    height: 450px;
+#picFrame{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 5px;
+    height: 446px;
+}
+
+.pic{
+    position: absolute;
+    transition: left 0.3s;
+}
+
+#pic1{
+    left: 0px;
+    width: 80%;
+}
+
+#pic2{
+    left: 1000px;
+    width: 80%;
+}
+
+#pic3{
+    left: 2000px;
+    width: 80%;
+}
+
+#pic4{
+    left: 3000px;
+    width: 100%;
+}
+
+.arrow{
+    x-index: 2;
+    font-size: 35px;
+    margin: 3% 580px 0 580px;
+    opacity: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+#picSelector{
+    position: absolute;
+    bottom: 45px;
+    width: fit-content;
+}
+
+#btnDiv{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    opacity: 60%;
 }
 
 /* Related products */
