@@ -405,10 +405,10 @@ a, a:active, a:hover {
 } 
 
 /*footer */
-#footer {
-    /* height: 1000px; */
-    /* color: #fff; */
-}
+/* #footer {
+    height: 1000px;
+    color: #fff;
+} */
 
 #footer .logo-brand {
     background-color: #65b4df; 
