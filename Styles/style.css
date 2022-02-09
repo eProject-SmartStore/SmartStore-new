@@ -31,9 +31,10 @@ body {
 
 /*header */
 #header {
-    width: 1200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
+    margin-top: 0px;
+    /* padding-top: 10px; */
+    
 }
 
 #header .logo {
@@ -43,6 +44,8 @@ body {
 
 #header .up {
     display: flex;
+    
+    padding: 10px 40px;
 }
 
 #header .search {
@@ -83,8 +86,14 @@ body {
 
 #header .list li {
     opacity: 0.8;
-    font-size: 18px;
+    font-size: 17px;
 }
+
+#header .list {
+    /* width: 1200px; */
+    background-color: #ccc;
+}
+
 
 #header .list li:hover {
     opacity: 1;
@@ -104,8 +113,7 @@ body {
     width: 320px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #65b4df
-;
+    background-color: #65b4df;
 }
 
 #wrapper .card_big_topic{
@@ -411,7 +419,7 @@ a, a:active, a:hover {
 } */
 
 #footer .logo-brand {
-    background-color: #65b4df; 
+    background-color: #ccc; 
     padding: 20px;
     margin: 0 auto;
 }
@@ -423,7 +431,7 @@ a, a:active, a:hover {
 #footer .footer-content {
     display: flex;
     justify-content: space-evenly;
-    background-color: #0a669b;
+    background-color: rgb(179, 179, 179);
     padding: 20px;
     line-height: 2;
 }
