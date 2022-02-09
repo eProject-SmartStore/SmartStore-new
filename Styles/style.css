@@ -234,7 +234,7 @@ body {
     width: 1200px;
     margin: 0px auto;
     /* background-color: rgb(198, 234, 255); */
-    background-color: #65b4df; 
+    background-color: rgb(190, 185, 185); 
     text-align: center;    
 }
 #brand .brand-name{
@@ -493,8 +493,13 @@ a, a:active, a:hover {
 
 #footer .follow-icon > img {
     margin-right: 10px;
+    opacity: 0.8;
 }
 
+#footer .follow-icon > img:hover {
+    animation: modalFaceIn linear 1s;
+    opacity: 1;
+}
 
 
 
