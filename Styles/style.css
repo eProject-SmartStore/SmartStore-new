@@ -118,32 +118,32 @@ body {
     height: 446px;
 }
 
-.pic{
+#wrapper .pic{
     position: absolute;
     transition: left 0.3s;
 }
 
-#pic1{
+#wrapper #pic1{
     left: 0px;
     width: 80%;
 }
 
-#pic2{
+#wrapper #pic2{
     left: 1000px;
     width: 80%;
 }
 
-#pic3{
+#wrapper #pic3{
     left: 2000px;
     width: 80%;
 }
 
-#pic4{
+#wrapper #pic4{
     left: 3000px;
     width: 100%;
 }
 
-.arrow{
+#wrapper .arrow{
     x-index: 2;
     font-size: 35px;
     margin: 3% 580px 0 580px;
