@@ -24,6 +24,11 @@ body {
     z-index: 1000;
 }
 
+.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 /*header */
 #header {
     width: 1200px;
