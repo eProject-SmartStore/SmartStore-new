@@ -51,11 +51,6 @@ body {
     display: flex;
 }
 
-#header .search-icon {
-    margin: 25px 0px 20px 5px;
-
-}
-
 #header input[type="text"] {
     width: 500px;
     padding: 8px;
@@ -63,14 +58,54 @@ body {
     appearance: none;
     font-size: 16px;
     outline: none;
-    border-radius: 3px 0px 0px;
+    border-radius: 4px 0px 0px 4px;
     margin: 20px 0px 20px 0px;
+}
+
+#header .search-button {
+    width: 94px;
+    height: 37px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+    border: 1px solid rgb(153, 153, 153);
+    border-left: 0;
+    background-color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+}
+
+#header .search-button .button-text {
+    margin-bottom: 8px;
+    color: rgb(48, 59, 65);
+    font-family: 'Nunito Sans',Arial;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 12px;
+    padding-left: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#header .search-button .button-icon {
+    margin-left: 0px;
+    vertical-align: middle;
+}
+
+#header .search-button:hover {
+    background-color: #ccc;
 }
 
 #header .list ul {
     display: flex;
-    border-top: solid 1px #003f62;
-    border-bottom: solid 1px #003f62;
+    border-top: solid 1px rgb(73, 73, 73);
+    border-bottom: solid 1px rgb(73, 73, 73);
     padding: 5px;
 }
 
@@ -562,31 +597,47 @@ a, a:active, a:hover {
 
 #contact-Us > h1 {
     text-align: center;
-    color: #003f62;
+    color: rgb(73, 72, 72);
     padding: 20px;
 }
 
 #contact-Us .contactUs-content {
     width: 600px;
     height: 450px;
-    background-color: #003f62;
+    background-color: rgb(185, 169, 169);
     line-height: 2;
 }
 
+
 #contact-Us .contactUs-content  h4 {
-    color: #fff;
+    color: rgb(65, 63, 63);
     margin: 0 0 15px 30px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
-#contact-Us .contactUs-content ul {
-    color: #ccc;
+#contact-Us .content {
+    margin: 5px 40px;
+}
+
+#contact-Us .content img {
+    margin-bottom: 0px;
+}
+
+#contact-Us .contactUs-content span {
+    color: rgb(59, 58, 58);
+    font-size: 15px;
+    padding-bottom: 0px;
 }
 
 .m-130-0-130-30 {
     margin: 130px 0 130px 30px;  
 }
 
+#contact-Us .contactUs-content a:hover {
+    text-decoration: underline;
+}
+
 li {
     list-style: none;
 }
-
