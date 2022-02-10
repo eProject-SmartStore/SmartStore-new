@@ -454,7 +454,40 @@ a, a:active, a:hover {
     padding: 1.5em 3em 1em 3em;
 } 
 
+
+/* drag-wrapper*/
+#drag-wrapper {
+    position: fixed;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000000000;
+    top: 75%;
+    /* left: 0; */
+    right: 0.5%;
+    /* bottom: 0;  */
+}
+
+#drag-wrapper .drag-wrapper-icon {
+    float: right;
+    margin: 0;
+    cursor: pointer;
+}
+
+#drag-wrapper .drag-wrapper-icon img {
+    max-width: 100%;
+    height: auto;
+    /* width: 75%;
+    margin-top: 15%; */
+}
+#drag-wrapper .drag-wrapper-icon a:hover {
+    animation: potUp 1s;
+}
+
+
 /*footer */
+
 /* #footer {
     height: 1000px;
     color: #fff;
@@ -497,12 +530,21 @@ a, a:active, a:hover {
 }
 
 #footer .follow-icon > img:hover {
-    animation: modalFaceIn linear 1s;
+    animation: potUp 1s;
     opacity: 1;
 }
 
 
-
+@keyframes potUp {
+    from{
+        opacity: 0;
+        width: 100%;
+    }
+    to{
+        opacity: 1;
+        width: calc(100% - 55px);
+    }
+}
 
 
 
