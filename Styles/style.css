@@ -402,6 +402,7 @@ a {
 .product-item-text li:nth-child(2) a{
     text-decoration: line-through;
     color: #000000;
+    font-size: 12px;
 }
 
 .product-item-text li:first-child:hover{
