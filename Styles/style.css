@@ -210,27 +210,27 @@ body {
 /* Related products */
 #related-products {
     width: 1200px;
-    margin-top: 20px;
-    display: flex;
+    margin-top: 0px;
     text-align: center;
 }
 
-#related-products div.one{
-    margin: auto;
-    background-color: rgb(190, 219, 236);
-    
+
+#related-products .product-content {
+    color: #000;
+    font-size: 20px;
+    font-weight: 550;
+    justify-content: space-evenly;
 }
-#related-products p.two {
-    margin-top: -6px;
-    color: rgb(55, 20, 255);
-    font-size: 25px;
-}
-#related-products div.one.version2 {
-    background-color: rgb(190, 219, 236);
+
+#related-products .version {
+    background-color: #ccc;
+    padding: 20px;
     display: flex;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 101%;
+}
+
+#related-products .product-content a:hover {
+    text-decoration: underline;
 }
 
 /* event */
