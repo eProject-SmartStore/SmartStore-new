@@ -344,11 +344,9 @@ a {
     display: flex;
 
 }
-#now-trending div.one.vosion2{
+#now-trending .vosion2{
 /* border: 5px inset deeppink; */
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 20px;
     overflow-x: hidden;
 }
 #now-trending h1{
@@ -358,7 +356,7 @@ a {
 /*Trending item*/
 .content{
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 80px;
 }
 
