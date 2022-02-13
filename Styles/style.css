@@ -354,67 +354,67 @@ a {
 }
 
 /*Trending item*/
-#wrapper-items .content{
+.content{
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
-#wrapper-items .content  h1{
+.content  h1{
     text-align: center;
-    font-size: 32px;
+    font-size: 34px;
 }
 
-#wrapper-items .products{
+.products{
     display: flex;
     justify-content: space-evenly;
 }
 
-#wrapper-items .product-item{
+.product-item{
     width: 19%;
     padding: 12px;
     margin: 0 10px 0 10 px !important;
 }
 
-#wrapper-items .product-item:hover img{
+.product-item:hover img{
     transform: translateY(-10px);
     transition: all 0.6s ease ;
     cursor: pointer;
 }
 
-#wrapper-items .product-item > img{
+.product-item > img{
     width: 100%;
 
 }
 
-#wrapper-items .product-item-text{
+.product-item-text{
     padding-top: 20px;
+
 }
 
-#wrapper-items .product-item-text ul{
+.product-item-text ul{
     list-style: none;
 }
 
-#wrapper-items .product-item-text li{
+.product-item-text li{
     margin-bottom: 6px;
 }
 
-#wrapper-items .product-item-text li i{
+.product-item-text li i{
     color: #FFD700;
 }
 
-#wrapper-items .product-item-text li:nth-child(2) a{
+.product-item-text li:nth-child(2) a{
     text-decoration: line-through;
     color: #000000;
     font-size: 12px;
 }
 
-#wrapper-items .product-item-text li:first-child:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.product-item-text li:first-child:hover{
+    text-decoration-line: underline		;
 }
 
-#wrapper-items .product-item-text li:nth-child(2) span{
+.product-item-text li:nth-child(2) span{
     font-weight: bold;
 }
 .slider-product-one-content-container{
