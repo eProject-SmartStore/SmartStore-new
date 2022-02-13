@@ -210,27 +210,27 @@ body {
 /* Related products */
 #related-products {
     width: 1200px;
-    margin-top: 0px;
+    margin-top: 20px;
+    display: flex;
     text-align: center;
 }
 
-
-#related-products .product-content {
-    color: #000;
-    font-size: 20px;
-    font-weight: 550;
-    justify-content: space-evenly;
+#related-products div.one{
+    margin: auto;
+    background-color: rgb(190, 219, 236);
+    
 }
-
-#related-products .version {
-    background-color: #ccc;
-    padding: 20px;
+#related-products p.two {
+    margin-top: -6px;
+    color: rgb(55, 20, 255);
+    font-size: 25px;
+}
+#related-products div.one.version2 {
+    background-color: rgb(190, 219, 236);
     display: flex;
-    width: 101%;
-}
-
-#related-products .product-content a:hover {
-    text-decoration: underline;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* event */
@@ -265,11 +265,6 @@ body {
     text-align: center;
     float: right;
 } 
-
-#event .event-content a:hover {
-    text-decoration: underline;
-}
-
 
 /* brand */
 #brand {
@@ -344,9 +339,11 @@ a {
     display: flex;
 
 }
-#now-trending .vosion2{
+#now-trending div.one.vosion2{
 /* border: 5px inset deeppink; */
-    padding: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     overflow-x: hidden;
 }
 #now-trending h1{
@@ -354,106 +351,169 @@ a {
 }
 
 /*Trending item*/
-#wrapper-items .content{
+.content{
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
-#wrapper-items .content  h1{
+.content  h1{
     text-align: center;
-    font-size: 32px;
+    font-size: 34px;
 }
 
-#wrapper-items .products{
+.products{
     display: flex;
     justify-content: space-evenly;
 }
 
-#wrapper-items .product-item{
+.product-item{
     width: 19%;
     padding: 12px;
     margin: 0 10px 0 10 px !important;
 }
 
-#wrapper-items .product-item:hover img{
+.product-item:hover img{
     transform: translateY(-10px);
     transition: all 0.6s ease ;
     cursor: pointer;
 }
 
-#wrapper-items .product-item > img{
+.product-item > img{
     width: 100%;
 
 }
 
-#wrapper-items .product-item-text{
+.product-item-text{
     padding-top: 20px;
+
 }
 
-#wrapper-items .product-item-text ul{
+.product-item-text ul{
     list-style: none;
 }
 
-#wrapper-items .product-item-text li{
+.product-item-text li{
     margin-bottom: 6px;
 }
 
-#wrapper-items .product-item-text li i{
+.product-item-text li i{
     color: #FFD700;
 }
 
-#wrapper-items .product-item-text li:nth-child(2) a{
+.product-item-text li:nth-child(2) a{
     text-decoration: line-through;
     color: #000000;
     font-size: 12px;
 }
 
-#wrapper-items .product-item-text li:first-child:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.product-item-text li:first-child:hover{
+    text-decoration-line: underline		;
 }
 
-#wrapper-items .product-item-text li:nth-child(2) span{
+.product-item-text li:nth-child(2) span{
     font-weight: bold;
 }
 
-/* goods */ 
-#goods {
-    width: 1200px;
-    text-align: center;
-    margin-bottom: 30px;
+.slider-product-one-content-container{
+    position: relative;
+    overflow: hidden;
 }
 
-#goods > a {
-    margin-bottom: 10px;
-    color: rgb(114, 111, 111) !important;
-    text-decoration: underline;
-}
-
-#goods > a:hover {
-    color: #000 !important;
-}
-
-#goods .goods-product {
+.slider-product-one-content-btn{
+    position: absolute;
+    top: 30%;
     display: flex;
+    justify-content: space-between;
+    width: 100% ;
 }
 
-#goods .goods-product img {
-    border-radius: 100%;
+.slider-product-one-content-btn i{
+    color: #333333;
+    font-size: 32px;
+    height: 50px;
+    width: 25px;
+    background-color: rgb(253,242,242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-#goods .goods-container {
-    margin: 13px;
+.slider-product-one-content-container{
+    width: 100%;
 }
 
-#goods .content {
-    box-sizing: inherit;
+.slider-product-one-content-items-container{
+    position: relative;
+    height: 420px;
+    transition: all 0.3 ease;
 }
 
-#goods .goods-container a:hover{
-    text-decoration: underline;
+.products{
+    position: absolute;
 }
+
+.products:nth-child(2) {
+    transform: translateX(100%);
+}
+
+.products:nth-child(3) {
+    transform: translateX(200%);
+}
+
+
+/*trending */ 
+#trending {
+    width: 1200px;
+    height: 390px;
+    margin: 30px auto;
+    background-color: #ccc;
+}
+
+#trending .store{
+    display:flex;
+    justify-content: space-between;
+    margin: 0.6em;
+    border-radius: 5px;
+    box-shadow: none;
+}
+a, a:active, a:hover {
+    cursor: pointer!important;
+}
+#trending a {
+    color: #a1b5ff;
+    outline: 0;
+    overflow: hidden;
+    text-decoration: none;
+    background: 0 0;
+}
+#trending .titles{
+    text-align: center;
+    color: #000000;
+}
+#trending .title{
+    text-align: center;
+    color: #000000;
+}
+#trending .container{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}   
+#trending .thumn{
+    margin-top: -58px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 1.5em 3em 1em 3em;
+} 
 
 
 /* drag-wrapper*/
@@ -465,7 +525,9 @@ a {
     box-sizing: border-box;
     z-index: 1000000000;
     top: 75%;
+    /* left: 0; */
     right: 0.5%;
+    /* bottom: 0;  */
 }
 
 #drag-wrapper .drag-wrapper-icon {
@@ -474,16 +536,14 @@ a {
     cursor: pointer;
 }
 
-#drag-wrapper .drag-wrapper-icon a {
+#drag-wrapper .drag-wrapper-icon img {
     max-width: 100%;
     height: auto;
-
+    /* width: 75%;
+    margin-top: 15%; */
 }
 #drag-wrapper .drag-wrapper-icon a:hover {
-    animation: potUp 0.6;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-    /* border-radius: 100px; */
-
+    animation: potUp 1s;
 }
 
 
@@ -530,10 +590,8 @@ a {
     opacity: 0.8;
 }
 
-#footer .logo-brand img:hover,
-#footer .logo-smartStore img:hover,
 #footer .follow-icon > img:hover {
-    animation: potUp  0.5s;
+    animation: potUp 1s;
     opacity: 1;
 }
 
@@ -541,11 +599,11 @@ a {
 @keyframes potUp {
     from{
         opacity: 0;
-        transform: translateY(px);
+        width: 100%;
     }
     to{
         opacity: 1;
-        transform: translateY(-5px);
+        width: calc(100% - 55px);
     }
 }
 
@@ -596,8 +654,8 @@ a {
     padding-bottom: 0px;
 }
 
-.m-130-0-130-20 {
-    margin: 130px 0 130px 20px;  
+.m-130-0-130-30 {
+    margin: 130px 0 130px 30px;  
 }
 
 #contact-Us .contactUs-content a:hover {
