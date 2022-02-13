@@ -417,7 +417,7 @@ a {
 
 .slider-product-one-content-container{
     position: relative;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .slider-product-one-content-btn{
@@ -425,7 +425,7 @@ a {
     top: 30%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100% ;
 }
 
 .slider-product-one-content-btn i{
@@ -441,6 +441,10 @@ a {
     border-radius: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.slider-product-one-content-container{
+    width: 100%;
 }
 
 .slider-product-one-content-items-container{
