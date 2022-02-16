@@ -64,7 +64,7 @@ body {
 
 /* */
 #smartStore-body {
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(211, 209, 209);
     text-align: center;
 }
 
@@ -74,13 +74,20 @@ body {
     padding: 50px;
 }
 
-#smartStore-body .logo-content {
-    margin: 0px auto;
+#smartStore-body .logo-content-box {
+    display: block;
+    box-sizing: border-box;
     align-items: center;
+}
+
+#smartStore-body .logo-content-box .logo-content {
+    margin: 20px auto;
 }
 
 #smartStore-body .form-tag {
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
 }
 
 #smartStore-body .form-tag .login-registration-title {
@@ -88,8 +95,66 @@ body {
     font-size: 1.25rem;
     color: #222;
     text-transform: capitalize;
+    margin: 25px auto;
 }
 
-#smartStore-body .form-tag  {
-    
+#smartStore-body .form-tag .box {
+    padding: 0px 35px 20px 35px ;
+    overflow: hidden
+}
+
+#smartStore-body .form-tag .enter {
+    width: 100%;
+    padding: 0.75rem;
+    outline: none;
+    /* border: 0; */
+    flex: 1;
+    flex-shrink: 0;
+    -webkit-filter: none;
+    filter: none;
+    /* box-shadow: 0 0 4px rgb(0 0 0 / 14%) */
+    margin-bottom: 30px;
+}
+
+#smartStore-body .form-tag .btn {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(56, 55, 55);
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.75;
+    border-radius: 3px;
+}
+
+#smartStore-body .form-tag .btn:hover {
+    opacity: 1;
+}
+
+#smartStore-body .form-tag .forgot {
+    text-align: right;
+    margin: 5px 0px 5px 200px;
+    font-size: 13px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#smartStore-body .form-tag .forgot:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+#smartStore-body .form-tag .newTo {
+    margin: 15px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+#smartStore-body .form-tag .newTo span {
+    color: rgb(146, 146, 146);
+}
+
+
+#smartStore-body .form-tag .newTo a:hover {
+    overflow: 1;
+    text-decoration:underline;
 }
