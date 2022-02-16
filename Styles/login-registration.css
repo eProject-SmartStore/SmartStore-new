@@ -1,0 +1,95 @@
+ html {
+    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 1200px; */
+    line-height: 1.4285;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0px auto;
+}
+
+*{
+    margin:  0px auto;
+}
+
+/* login */
+#smartStore-header {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#smartStore-header .smartStore {
+    justify-content: space-between;
+    display: flex;
+    margin: 5px 0;
+}
+
+#smartStore-header .login-registration{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#smartStore-header .login-registration .item {
+    margin: 10px 20px;
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 530;
+}
+
+#smartStore-header .help{
+    margin: 22px 15px 22px 0px;
+    font-size: .875rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+#smartStore-header .help a {
+    align-items: center;
+    opacity: 0.8;
+}
+
+#smartStore-header .help a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+/* */
+#smartStore-body {
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+}
+
+#smartStore-body .container {
+    width: 1200px;
+    display: flex;
+    padding: 50px;
+}
+
+#smartStore-body .logo-content {
+    margin: 0px auto;
+    align-items: center;
+}
+
+#smartStore-body .form-tag {
+    background-color: #fff;
+}
+
+#smartStore-body .form-tag .login-registration-title {
+    max-width: 8.5rem;
+    font-size: 1.25rem;
+    color: #222;
+    text-transform: capitalize;
+}
+
+#smartStore-body .form-tag  {
+    
+}
