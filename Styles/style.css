@@ -354,75 +354,75 @@ a {
 }
 
 /*Trending item*/
-.content{
+.wrapper-items .content{
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.content  h1{
+.wrapper-items .content  h1{
     text-align: center;
     font-size: 34px;
 }
 
-.products{
+.wrapper-items .products{
     display: flex;
     justify-content: space-evenly;
 }
 
-.product-item{
+.wrapper-items .product-item{
     width: 19%;
     padding: 12px;
     margin: 0 10px 0 10 px !important;
 }
 
-.product-item:hover img{
+.wrapper-items .product-item:hover img{
     transform: translateY(-10px);
     transition: all 0.6s ease ;
     cursor: pointer;
 }
 
-.product-item > img{
+.wrapper-items .product-item > img{
     width: 100%;
 
 }
 
-.product-item-text{
+.wrapper-items .product-item-text{
     padding-top: 20px;
 
 }
 
-.product-item-text ul{
+.wrapper-items .product-item-text ul{
     list-style: none;
 }
 
-.product-item-text li{
+.wrapper-items .product-item-text li{
     margin-bottom: 6px;
 }
 
-.product-item-text li i{
+.wrapper-items .product-item-text li i{
     color: #FFD700;
 }
 
-.product-item-text li:nth-child(2) a{
+.wrapper-items .product-item-text li:nth-child(2) a{
     text-decoration: line-through;
     color: #000000;
     font-size: 12px;
 }
 
-.product-item-text li:first-child:hover{
+.wrapper-items .product-item-text li:first-child:hover{
     text-decoration-line: underline		;
 }
 
-.product-item-text li:nth-child(2) span{
+.wrapper-items .product-item-text li:nth-child(2) span{
     font-weight: bold;
 }
-.slider-product-one-content-container{
+.wrapper-items .slider-product-one-content-container{
     position: relative;
     overflow: hidden;
 }
 
-.slider-product-one-content-btn{
+.wrapper-items .slider-product-one-content-btn{
     position: absolute;
     top: 30%;
     display: flex;
@@ -430,7 +430,7 @@ a {
     width: 100%;
 }
 
-.slider-product-one-content-btn i{
+.wrapper-items .slider-product-one-content-btn i{
     color: #333333;
     font-size: 32px;
     height: 50px;
@@ -445,21 +445,21 @@ a {
     cursor: pointer;
 }
 
-.slider-product-one-content-items-container{
+.wrapper-items .slider-product-one-content-items-container{
     position: relative;
     height: 420px;
     transition: all 0.3 ease;
 }
 
-.products{
+.wrapper-items .products{
     position: absolute;
 }
 
-.products:nth-child(2) {
+.wrapper-items .products:nth-child(2) {
     transform: translateX(100%);
 }
 
-.products:nth-child(3) {
+.wrapper-items .products:nth-child(3) {
     transform: translateX(200%);
 }
 
