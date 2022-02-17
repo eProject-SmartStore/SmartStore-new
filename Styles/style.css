@@ -111,7 +111,6 @@ body {
 
 #header .icon {
     margin: 20px 0px 20px 0px;
-    
 }
 
 #header .icon a {
@@ -249,8 +248,7 @@ body {
 }
 
 #event > h1 {
-    padding: 20px 0 40px 0;
-    font-size: 33px;
+    padding: 25px 0 20px 0;
 }
 
 #event figcaption {
@@ -282,7 +280,6 @@ body {
 }
 #brand .brand-name{
     padding: 20px 20px 10px 20px;
-    font-size: 33px;
     animation: modalFaceIn ease 1s;
 }
 
@@ -348,14 +345,13 @@ a {
 }
 
 #now-trending .version {
-    padding: 20px;
+    padding: 15px 10px 20px 20px;
     overflow-x: hidden;
     position: relative;
 }
 
 #now-trending h1{
     padding-top: 15px;
-    font-size: 33px;
 }
 
 #now-trending .btn-left-right {
@@ -396,7 +392,7 @@ a {
 
 .wrapper-items .content  h1{
     text-align: center;
-    font-size: 33px;
+    font-size: 2rem;
 }
 
 .wrapper-items .products{
@@ -445,7 +441,7 @@ a {
 }
 
 .wrapper-items .product-item-text li:first-child:hover{
-    text-decoration-line: underline		;
+    text-decoration-line: underline;
 }
 
 .wrapper-items .product-item-text li:nth-child(2) span{
@@ -507,6 +503,10 @@ a {
     width: 1200px;
     text-align: center;
     margin-bottom: 30px;
+}
+
+#goods h1 {
+    font-size: 30px;
 }
 
 #goods > a {
