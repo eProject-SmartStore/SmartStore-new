@@ -86,8 +86,17 @@ body {
     text-align: center;
 }
 
-#smartStore-body .logo-content-box .logo-content {
-    margin: 0 auto;
+#smartStore-body .logo-content-box .m-88-0 {
+    margin: 76px 0px;
+}
+
+#smartStore-body .logo-content-box .m-138-0 {
+    margin: 138px 0px;
+}
+
+#smartStore-body .logo-content-box .content {
+    width: 400px;
+    justify-content: center;
 }
 
 #smartStore-body .form-tag {

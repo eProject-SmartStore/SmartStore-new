@@ -250,6 +250,7 @@ body {
 
 #event > h1 {
     padding: 20px 0 40px 0;
+    font-size: 33px;
 }
 
 #event figcaption {
@@ -281,6 +282,7 @@ body {
 }
 #brand .brand-name{
     padding: 20px 20px 10px 20px;
+    font-size: 33px;
     animation: modalFaceIn ease 1s;
 }
 
@@ -344,13 +346,45 @@ a {
     display: flex;
 
 }
-#now-trending .vosion2{
-/* border: 5px inset deeppink; */
+
+#now-trending .version {
     padding: 20px;
     overflow-x: hidden;
+    position: relative;
 }
+
 #now-trending h1{
     padding-top: 15px;
+    font-size: 33px;
+}
+
+#now-trending .btn-left-right {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+
+#now-trending .btn-left-right button {
+    color: #bbbbbb;
+    font-size: 32px;
+    height: 50px;
+    width: 25px;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0px;
+    border: none;
+}
+
+#now-trending .btn-left-right button:hover {
+    background-color: #c7c7c7;
 }
 
 /*Trending item*/
@@ -362,7 +396,7 @@ a {
 
 .wrapper-items .content  h1{
     text-align: center;
-    font-size: 34px;
+    font-size: 33px;
 }
 
 .wrapper-items .products{
@@ -424,7 +458,7 @@ a {
 
 .wrapper-items .slider-product-one-content-btn{
     position: absolute;
-    top: 30%;
+    top: 33%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -435,7 +469,7 @@ a {
     font-size: 32px;
     height: 50px;
     width: 25px;
-    background-color: rgb(253,242,242);
+    background-color: rgb(233, 233, 233);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,6 +477,11 @@ a {
     border-radius: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin: 0px;
+}
+
+.wrapper-items .slider-product-one-content-btn i:hover {
+    background-color: #c7c7c7;
 }
 
 .wrapper-items .slider-product-one-content-items-container{
