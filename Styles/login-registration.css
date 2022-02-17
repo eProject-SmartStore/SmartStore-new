@@ -6,7 +6,6 @@
 }
 
 body {
-    /* width: 1200px; */
     line-height: 1.4285;
     color: rgb(51, 51, 51);
     background-color: white;
@@ -19,16 +18,22 @@ body {
     margin:  0px auto;
 }
 
-/* login */
+/* login-registration */
 #smartStore-header {
+    box-sizing: border-box;
+    background-color: #ccc;
+    margin: 0px;
+}
+
+#smartStore-header .smartStore-header {
     width: 1200px;
-    margin: 0 auto;
 }
 
 #smartStore-header .smartStore {
+    margin: 0 auto;
     justify-content: space-between;
     display: flex;
-    margin: 5px 0;
+    padding: 5px 0;
 }
 
 #smartStore-header .login-registration{
@@ -64,7 +69,7 @@ body {
 
 /* */
 #smartStore-body {
-    background-color: rgb(211, 209, 209);
+    background-color: #fff;
     text-align: center;
 }
 
@@ -75,17 +80,18 @@ body {
 }
 
 #smartStore-body .logo-content-box {
+    width: 500px;
     display: block;
     box-sizing: border-box;
-    align-items: center;
+    text-align: center;
 }
 
 #smartStore-body .logo-content-box .logo-content {
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 #smartStore-body .form-tag {
-    background-color: #fff;
+    background-color: rgb(235, 235, 235);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 400px;
 }
