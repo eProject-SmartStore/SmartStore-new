@@ -51,3 +51,31 @@ leftbtn.addEventListener("click", function () {
     }
     document.querySelector(".slider-product-one-content-items-container").style.right = index *100+"%"
 })
+
+/* Now trending */
+let j = 0
+const btnRight = document.querySelector('.btn-right')
+const btnLeft = document.querySelector('.btn-left')
+const nowOne = document.querySelectorAll('.one') 
+btnRight.addEventListener("click", function () {
+    if(j < nowOne.length) {
+        addOnes(j)
+    }
+    j++
+});
+
+
+btnLeft.addEventListener("click", function () {
+    if(j < nowOne.length) {
+        removeOnes(j)
+    }
+    j++
+});
+
+function addOnes(j) {
+    return nowOne[j].classList.add('removeOne');
+}
+
+function removeOnes(j) {
+    return nowOne[j].classList.remove('removeOne');
+}

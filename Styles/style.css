@@ -31,9 +31,9 @@ body {
 
 /*header */
 #header {
-    
     margin-top: 0px;
     /* padding-top: 10px; */
+    position: relative;
     
 }
 
@@ -106,7 +106,6 @@ body {
     display: flex;
     border-top: solid 1px rgb(73, 73, 73);
     border-bottom: solid 1px rgb(73, 73, 73);
-    padding: 5px;
 }
 
 #header .icon {
@@ -121,17 +120,43 @@ body {
     opacity: 0.8;
     font-size: 17px;
     font-weight: 600;
+    padding: 5px;
 }
 
 #header .list {
-    /* width: 1200px; */
     background-color: #ccc;
+    display: block;
 }
 
 
 #header .list li:hover {
     opacity: 1;
     text-decoration: underline;
+}
+
+#header li:hover .subnav{
+    display: block !important;
+}
+
+#header .nav-arrow-down{
+    font-weight: 900;
+    opacity: 1;
+}
+
+#header .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+#header .subnav{
+    z-index: 1000000000;
+    display: none !important;
+    min-width: 120px;
+    top: 100%;
+    position: absolute;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style-type: none;
+    padding: 0px 20px;
 }
 
 
@@ -338,16 +363,21 @@ a {
     width: 1200px;
 }
 
-#now-trending div.one{
-    margin-right: 10px;
-    display: flex;
-
+#now-trending .one{
+    margin: 5px;
+    width: 20%;
+    display: block;
 }
 
 #now-trending .version {
-    padding: 15px 10px 20px 20px;
+    padding: 15px 15px 20px 15px;
     overflow-x: hidden;
     position: relative;
+    display: flex;
+}
+
+#now-trending .version .removeOne{
+    display: none;
 }
 
 #now-trending h1{
@@ -362,8 +392,8 @@ a {
     width: 1170px;
 }
 
-#now-trending .btn-left-right button {
-    color: #bbbbbb;
+#now-trending .btn-left-right i {
+    color: #fff;
     font-size: 32px;
     height: 50px;
     width: 25px;
@@ -379,8 +409,9 @@ a {
     border: none;
 }
 
-#now-trending .btn-left-right button:hover {
+#now-trending .btn-left-right i:hover {
     background-color: #c7c7c7;
+    color: #000;
 }
 
 /*Trending item*/
@@ -465,7 +496,7 @@ a {
     font-size: 32px;
     height: 50px;
     width: 25px;
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
     display: flex;
     justify-content: center;
     align-items: center;
