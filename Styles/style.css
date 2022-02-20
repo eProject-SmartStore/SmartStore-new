@@ -722,3 +722,36 @@ a {
 li {
     list-style: none;
 }
+
+
+
+/* cart.html */
+#cart{
+    margin: auto;
+    text-align: center;
+    width:55%;
+    padding: 10px;
+}
+
+#cart .left {
+    text-align: left !important;
+    margin-left: 0px;
+}
+
+#cart table{
+    width:110%;
+}
+
+#cart table tr td{
+    border-bottom: #000 1px solid;
+    padding: 12px 0;
+}
+
+#cart .title-cart th{
+    border-bottom: 1px solid #000;
+    color:rgb(88, 88, 88)
+}
+
+.m-5 {
+    margin: 5px;
+}
