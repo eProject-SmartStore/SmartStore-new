@@ -364,8 +364,8 @@ a {
 }
 
 #now-trending .one{
-    margin: 5px;
-    width: 20%;
+    box-sizing: border-box;
+    margin-right: 10px;
     display: block;
 }
 

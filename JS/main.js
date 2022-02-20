@@ -58,16 +58,23 @@ const btnRight = document.querySelector('.btn-right')
 const btnLeft = document.querySelector('.btn-left')
 const nowOne = document.querySelectorAll('.one') 
 btnRight.addEventListener("click", function () {
-    if(j < nowOne.length) {
+    if (j < nowOne.length) {
         addOnes(j)
+        if ( j >= 5) {
+            j = j - 5
+            removeOnes(j)
+            // j = j + 6
+        }
     }
     j++
 });
 
 
 btnLeft.addEventListener("click", function () {
-    if(j < nowOne.length) {
-        removeOnes(j)
+    if (j < nowOne.length) {
+        if ( nowOne.classList('removeOne') ) {
+            removeOnes(j)
+        }
     }
     j++
 });
