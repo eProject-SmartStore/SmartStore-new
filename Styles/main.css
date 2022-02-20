@@ -1,8 +1,3 @@
-
-#product-smart-store .ss-product {
-
-}
-
 #product-smart-store .ss-product-item {
     width: 100%;
     transition: transform linear 0.1s;
@@ -115,7 +110,8 @@
     margin: 0;
     height: 2.8rem;
     line-height: 1.4rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 545;
     word-wrap: break-word;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -149,6 +145,7 @@
 #product-smart-store .product-quality--fivestar {
     margin-left: 6px;
     margin-right: auto;
+    color: #ffce3d;
 }
 
 #product-smart-store .product-quality--fivestar-icon {
