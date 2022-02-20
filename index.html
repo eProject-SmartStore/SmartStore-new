@@ -1,58 +1,837 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>Smart Store</title>
+    <link rel="icon" href="img/logo-smartstore.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="styles/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
-<section class="cart">
-    <form action="">
-        <table>
-            <thead>
-               <tr style="color:dodgerblue">
-                   <th>Name</th>
-                   <th>Price</th>
-                   <th>Quantity</th>
-                   <th>Subtotal</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                   <td style="display:flex;align-items:center"><img style="width:140px" src="Vixen Compact Cube Dining Set.jpg" alt="">Vixen Compact Cube Dining Set</td>
-                   <td><span style="text-decoration: line-through">256.10</span><sup>$</sup> <span style="color:firebrick">200.00</span><sup>$</sup></a></td>
-                   <td><input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
-                       <input style="width: 30px" id='quantity' min='1' name='quantity' type='text' value='1' />
-                       <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' /></td>
-                   <td style="font-size: 20px;color:firebrick"><span>200.00</span><sup>$</sup></td>
-                   <td><button>x</button></td>
-               </tr>
-               <tr>
-                   <td style="display:flex;align-items:center"><img style="width:140px" src="Priya Side Table.jpg" alt="">Priya Side Table</td>
-                   <td><span style="text-decoration: line-through">201.89</span><sup>$</sup> <span style="color:firebrick">188.88</span><sup>$</sup></a></td>
-                   <td><input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
-                       <input style="width: 30px" id='quantity' min='1' name='quantity' type='text' value='1' />
-                       <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' /></td>
-                   <td style="font-size: 20px;color:firebrick"><span>188.88</span><sup>$</sup></td>
-                   <td><button>x</button></td>
-               </tr>
-               <tr>
-                   <td style="display:flex;align-items:center"><img style="width:140px" src="Mateo Clic Clac Sofa Bed.jpg" alt="">Mateo Clic Clac Sofa Bed</td>
-                   <td><span style="text-decoration: line-through">947.22</span><sup>$</sup> <span style="color:firebrick">888.76</span><sup>$</sup></a></td>
-                   <td><input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
-                       <input style="width: 30px" id='quantity' min='1' name='quantity' type='text' value='1' />
-                       <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' /></td>
-                   <td style="font-size: 20px;color:firebrick"><span>888.76</span><sup>$</sup></td>
-                   <td><button>x</button></td>
-               </tr>
-            </tbody>
-        </table>
-    </form>
-</section>
+    <div id="header">
+        <div class="menu">
+            <div class="up">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo-smartstore.png" width="120px" alt=""></a>
+                </div>
+                <div class="search">
+                   <input type="text" placeholder="What are you looking for?">
+                   <button class="search-button">
+                       <span class="button-text">Search</span>
+                       <span class="button-icon"><img src="img/chevron-right.svg" width="20px" alt=""></span>
+                   </button>
+                </div>
+                <div class="icon">
+                    <a href="cart.html"><img src="img/cart4.svg" width="30px" alt=""></a>
+                    <a href="login.html"><img src="img/person-circle.svg" width="30px"  alt=""></a>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="product.html">PRODUCT</a>
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="#hanoi">Ha Noi Branch</a></li>
+                            <li><a href="#hochiminh">Ho Chi Minh Branch</a></li>
+                        </ul></li>
+                    <li><a href="compare.html">COMPARE</a></li>
+                    <li>
+                        <a href="contact_us.html">CONTACT</a>
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="#hanoi">Ha Noi Branch</a></li>
+                            <li><a href="#hochiminh">Ho Chi Minh Branch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Big Topic -->
+    <div id="wrapper">
+        <div id="slideshow-container">
+            <a href="">
+                <div class="mySlides fade">
+                    <img src="img/Big%20topic.jpg" style="width:100% ;height:600px">
+                </div>
+            </a>
+            <a href="">
+                <div class="mySlides fade">
+                    <img src="img/Big-topic2.jpg" style="width:100% ;height:600px">
+                </div>
+            </a>
+            <a href="">
+                <div class="mySlides fade">
+                    <img src="img/Big-topic%203.jfif" style="width:100% ;height:600px">
+                </div>
+            </a>
+            <a href="">
+                <div class="mySlides fade">
+                    <img src="img/Big-topic%204.jpg" style="width:100% ;height:600px">
+                </div>
+            </a>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div id="utilities" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <!--Related products-->
+    <div id="related-products">
+        <div class="version">
+                <div class="product-content">
+                    <a href="">
+                        <img src="img/bantra.jpg" height="260px" width="260px"  />
+                        <p class="two">Tea table</p>
+                    </a>
+                </div>
+                <div class="product-content">
+                    <a href="">
+                        <img src="img/banan.jpg" height="260px" width="260px" />
+                        <p class="two">Dinner table</p>
+                    </a>
+                </div>
+                <div class="product-content">
+                    <a href="">
+                        <img src="img/giuongngu.jpg" height="260px" width="260px" />
+                        <p class="two">Classic style bed</p>
+                    </a>
+                </div>
+                <div class="product-content">
+                    <a href="">
+                        <img src="img/Capture.jpg" height="260px" width="260px" />
+                        <p class="two">Bed for your baby</p>
+                    </a>
+                </div>
+        </div>
+    </div>
+      
+    <!-- event-->
+    <div id="event">
+        <h1>Event</h1>
+        <div class="event-content">
+            <div id="chri">
+                <a href="">
+                    <figure >
+                        <img src="img/christmas.jpg" alt="" width="540px" height="356px">
+                    </figure>
+                    <figcaption><h2>Sale Off Christmas Season</h2></figcaption>
+                </a>
+            </div>
+            <div id="new">
+                <a href="">
+                    <figure>
+                        <img src="img/happy-new-year.png" alt="" width="540px" height="356px">
+                    </figure>
+                    <figcaption><h2>Sale Off Early New Year</h2></figcaption>    
+                </a>
+            </div>
+        </div>
+    </div>
+
+   <!--brand-->
+    <div id="brand" class="brand">
+        <h1 class="brand-name">Dunelm</h1>
+        <div class="brand-product">
+            <div class="product-representative">
+                <a href="">
+                    <div>
+                        <img src="img/ToulouseGentsWardrobe.jpg" height="355px" width="355px" />
+                        <div class="representative-content">
+                            <h2>Luxurious</h2>
+                            <span>Featuring a French-inspired design with ornate floral detailing</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-representative">
+                <a href="">
+                    <div>
+                        <img src="img/Genoa3DoorMirroredWardrobe.jpg" height="355px" width="355px" />
+                        <div class="representative-content">
+                            <h2>Basic</h2>
+                            <span>Simplicity combined with modern style</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-representative">
+                <a href="">
+                    <div>
+                        <img src="img/ClaraGentsWardrobe.jpg" height="355px" width="355px" />
+                        <div class="representative-content">
+                            <h2>Personalities</h2>
+                            <span>Designed as youthful and full of personality</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="brand" class="brand bc-white">
+        <h1 class="brand-name">Knoll</h1>
+        <div class="brand-product">
+            <div class="product-representative">
+                <a href="">
+                    <div>
+                        <img src="img/WombSettee.png" height="355px" width="355px" />
+                        <div class="representative-content">
+                            <h2>Elegant</h2>
+                            <span>Create comfort and relaxation</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-representative">
+                <a href="">
+                    <div>
+                        <img src="img/FlorenceKnollSofa.png" height="355px" width="355px" />
+                        <div class="representative-content">
+                            <h2>Luxurious</h2>
+                            <span>Design is not sophisticated but bring luxury</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-representative">
+                <a href="">
+                    <div>
+                        <img src="img/RockwellUnscriptedModularLounge.jpg" height="355px" width="355px" />
+                        <div class="representative-content">
+                            <h2>Modern</h2>
+                            <span>Diverse colors bring youthfulness and eye-catching</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!--now trending-->
+    <div id="now-trending">
+        <h1>Now Trending</h1>
+        <div class="version">
+            <div class="btn-left-right">
+                <i class="btn-left ti-angle-left"></i>
+                <i class="btn-right ti-angle-right"></i>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh01.jpg" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh09.jpg" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh03.jpg" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/an04.png" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh05.png" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh06.jpg" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh07.png" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh08.jpg" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh02.jpg" height="200" width="300">
+                </a>
+            </div>
+            <div class="one">
+                <a href="">
+                    <img src="img/anh10.jpg" height="200" width="300">
+                <a>  
+            </div>
+        </div>
+    </div>
+    
+    <!--Trending Item-->
+    <section class="wrapper-items">
+        <div class="content">
+            <div class="slider-product-one-content">
+                <div class="content-title">
+                    <h1>Trending Item</h1>
+                </div>
+                <div class="slider-product-one-content-container">
+                    <div class="slider-product-one-content-items-container">
+                        <div class="products">
+                            <div class="product-item">
+                                <a href=""><img src="img/Priya%20Side%20Table.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Priya Side <br> Table</li>
+                                        <li><a href="">201.89<sup>$</sup></a> <span>188.88 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Fulton%202%20Drawer%20Bedside%20Table.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Fulton 2 Drawer Bedside Table</li>
+                                        <li><a href="">101.49<sup>$</sup></a> <span>96.49 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Vixen%20Compact%20Cube%20Dining%20Set.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Vixen Compact Cube Dining Set</li>
+                                        <li><a href="">256.10<sup>$</sup></a> <span>200.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Rosa%20Fabric%203%20Seater%20Sofa.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Rosa Fabric 3 Seater <br> Sofa</li>
+                                        <li><a href="">947.22<sup>$</sup></a> <span>888.76 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Sherbourne%20Oak%20Large%20Sideboard.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Sherbourne Oak Large Sideboard</li>
+                                        <li><a href="">581.36<sup>$</sup></a> <span>577.76 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <div class="product-item">
+                                <a href=""><img src="img/Richmond%20Extending%20Natural%20Dining%20Table.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Richmond Extending Natural Dining Table</li>
+                                        <li><a href="">649.64<sup>$</sup></a> <span>500.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Kids%20Grey%20Linen%20Armchair%20and%20Footstool.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Kids Grey Linen Armchair and Footstool</li>
+                                        <li><a href="">67.81<sup>$</sup></a> <span>60.00<sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Nautical%20Black%20Ladder%20Shelves.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Nautical Black Ladder Shelves</li>
+                                        <li><a href="">66.46<sup>$</sup></a> <span>50.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Roar%20Dinosaur%20Relaxer%20Bean%20Bag.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Roar Dinosaur Relaxer Bean Bag</li>
+                                        <li><a href="">120.00<sup>$</sup></a> <span>60.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Giovanna%20Chenille%202%20Seater%20Sofa.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Giovanna Chenille 2 Seater Sofa</li>
+                                        <li><a href="">1.219.27<sup>$</sup></a> <span>1.000.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <div class="product-item">
+                                <a href=""><img src="img/Modular%203%20Shelf%20Black%20Frame%20Component.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Modular 3 Shelf Black Frame Component</li>
+                                        <li><a href="">40.69<sup>$</sup></a> <span>30.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Modular%20Fulton%203%20Shelf%20Wide%20Shelving%20Unit.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Modular Fulton 3 Shelf Wide Shelving Unit</li>
+                                        <li><a href="">244.12<sup>$</sup></a> <span>200.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Ashbourne%20Fabric%20Ottoman%20Bed.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Ashbourne Fabric Ottoman Bed</li>
+                                        <li><a href="">446.21 <sup>$</sup></a> <span>440.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Blue%204%20Cube%20Metal%20Cabinet.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Blue 4 Cube Metal </br> Cabinet</li>
+                                        <li><a href="">100.00<sup>$</sup></a> <span>78.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/Kids%20Skylar%20Blush%20Mongolian%20Faux%20Fur%20Lounger.jpg" alt="" style="width: 100%"></a>
+                                <div class="product-item-text">
+                                    <ul>
+                                        <li>Kids Skylar Blush Mongolian </li>
+                                        <li><a href="">52.89 <sup>$</sup></a> <span>50.00 <sup>$</sup> </span></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-product-one-content-btn">
+                        <i class="fas fa-chevron-left ti-angle-left"></i>
+                        <i class="fas fa-chevron-right ti-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="JS/main.js"></script>
+    <!--goods-->
+    <div id="goods">
+        <h1>Featured products</h1>
+        <a class="goods-shop" href="">Shop all</a>
+        <div class="goods">
+            <div class="goods-product">
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/anh01.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Sofa</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/tea_table.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Tea Table</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/TV_shelf.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>TV Shelf</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/kitchen_table.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Kitchen Table</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/dinner_table.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Dinner Table</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/bed.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Bed</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="goods-product">
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/wardrobe.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Wardrobe</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/bed_shelf.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Bed Shelf</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/makeup_table.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Makeup Table</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/shoes_Cabinet.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Shoes Cabinet</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/Bohemian.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Bohemian</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/modern_comfort.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Modern And Comfort</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="goods-product">
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/luxurious.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Luxurious</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/comfortable.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Comfortable</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/colorful.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Colorful</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/historic.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Historic</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/nature.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Nature</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-container">
+                    <a href="">
+                        <div class="img-product">
+                            <img src="img/inner.jpg" width="175px" height="175px" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Inner</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--drag-wrapper-->
+    <div id="drag-wrapper">
+        <div class="drag-wrapper-icon">
+            <a href="mailto:smartstore8686@store.com">
+                <img src="img/email_PNG18.png" width="45px"/>
+            </a>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="logo-brand">
+            <a href="">
+                <img src="img/logo_knoll.webp" width="160px" height="40px" alt="">
+            </a>
+            <a href="">
+                <img src="img/logo_Ashley.svg" width="160px" height="40px" alt="">
+            </a>
+            <a href="">
+                <img src="img/logo_Aarons.svg" width="160px" height="40px" alt="">
+            </a>
+            <a href="">
+                <img src="img/logo_Driade.png" width="160px" height="40px" alt="">
+            </a>
+            <a href="">
+                <img src="img/logo_steelcase.svg" width="160px" height="40px" alt="">
+            </a>
+            <a href="">
+                <img src="img/logo-dunelm.png" width="160px" height="40px" alt="">
+            </a>
+        </div>
+        <div class="footer-content">
+            <div class="customerService">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                    <li>
+                        <a href="">Track My Order</a>
+                    </li>
+                    <li>
+                        <a href="">Returns & Refunds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="waysToShop">
+                <h4>Ways to Shop</h4>
+                <ul>
+                    <li>
+                        <a href="">Home Delivery</a>
+                    </li>
+                    <li>
+                        <a href="">Safe Shopping</a>
+                    </li>
+                    <li>
+                        <a href="">Click & Collect</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about">
+                <h4>About Smart Store</h4>
+                <ul>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">Sustainability</a>
+                    </li>
+                    <li>
+                        <a href="">Inspiration & Lifestyle</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo-social-payments">
+                <div class="logo-smartStore">
+                    <a href="index.html"><img src="img/logo-smartstore.png" width="100px" alt=""></a>
+                    <br />
+                    <span>©Smart Store 2022</span>
+                </div>
+                <div class="follow">
+                    <h3>FOLLOW US</h3>
+                    <a class="follow-icon" href="">
+                        <img src="img/facebook.svg" width="28px" height="28px" alt="">
+                        <img src="img/twitter_PNG2.png" width="28px" height="28px" alt="">
+                        <img src="img/instagram_PNG8.png" width="28px" height="28px" alt="">
+                        <img src="img/pinterest_PNG7.png" width="28px" height="28px" alt="">
+                        <img src="img/youtube_PNG102347.png" width="28px" height="28px" alt="">
+                    </a>
+                </div>
+                <div class="payments">
+                    <h3>Safe & Secure Payments</h3>
+                    <img src="img/payment.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+
+    <script src="JS/main.js"></script>
 </body>
 </html>
