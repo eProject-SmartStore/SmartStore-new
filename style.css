@@ -1,0 +1,13 @@
+.cart{
+    margin:auto;
+    text-align: center;
+    width:55%;
+    padding-top:100px;
+}
+.cart table{
+    width:110%;
+}
+.cart table tr td{
+    border-bottom: darkcyan 1px solid;
+    padding: 12px 0;
+}
