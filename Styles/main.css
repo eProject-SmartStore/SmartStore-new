@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+
 #product-smart-store .ss-product-item:hover  {
     cursor: pointer;
     transform: translateY(-4px);
@@ -39,7 +40,7 @@
     position: absolute;
     top: 1rem;
     left: -0.4rem;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: 500;
     color: rgb(242, 82, 32);
     background-color: currentColor;
@@ -69,7 +70,7 @@
     right: 0;
     background-color: rgba(255,212,36,.9);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 13px;
     width: 3.6rem;
     height: 3.2rem;
     display: flex;
@@ -110,7 +111,7 @@
     margin: 0;
     height: 2.8rem;
     line-height: 1.4rem;
-    font-size: 1.4rem;
+    font-size: 15px;
     font-weight: 545;
     word-wrap: break-word;
     text-overflow: ellipsis;
@@ -122,7 +123,7 @@
 
 #product-smart-store .product-info--price {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 15px;
     color: #ee4d2d;
     margin-top: 10px;
 }
