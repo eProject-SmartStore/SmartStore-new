@@ -277,7 +277,7 @@ body {
 }
 
 #related-products .version {
-    background-color: #ccc;
+    background-color: #eaeaea;
     padding: 20px;
     display: flex;
     width: 101%;
@@ -330,7 +330,7 @@ body {
     width: 1200px;
     margin: 0px auto;
     /* background-color: rgb(198, 234, 255); */
-    background-color: rgb(224 224 224); 
+    background-color: #eaeaea; 
     text-align: center;    
 }
 #brand .brand-name{
@@ -389,7 +389,7 @@ a {
 /* now trending */ 
 #now-trending {
     text-align: center;
-    background-color: #ccc;
+    background-color: #eaeaea;
     width: 1200px;
 }
 
@@ -925,4 +925,114 @@ li {
 #product-smart-store .s-product-brand {
     padding: 0px 10px 20px 10px;
 }
+
+
+
+/***************
+    about-us.html 
+ ***************/
+#about-us .about-us{
+    width: 1200px;
+    padding-bottom: 20px;
+}
+
+#about-us .about-title {
+    font-size: 1.75rem;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.b-top {
+    border-top: 2px #ccc solid;
+}
+
+#about-us .about-head-content {
+    margin: 40px 0;
+}
+
+#about-us .about-head p {
+    color: #707070;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 500;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    max-width: 580px;
+    margin: 0 auto 1.6875rem;
+    text-align: center;
+}
+
+#about-us .f-left {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+#about-us .f-right {
+    width: 50%; 
+    float: right;
+    padding: 20px;
+}
+
+#about-us .about-ss .ss--box{
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#about-us .ss--box h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#about-us .ss--box p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0.9375rem;
+    text-rendering: optimizeLegibility;
+}
+
+#about-us .three-content {
+    padding: 30px;
+}
+
+#about-us .three-content h3 {
+    font-size: 0.75rem;
+    padding-bottom: 10px;
+}
+
+#about-us .about-ss .ss--box-s{
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+#about-us .ss--box-s h2 {
+    font-size: 1.4rem;
+    padding: 30px;
+}
+
+#about-us .help-content {
+    padding: 5px 20px;
+}
+
+#about-us .help-content ul {
+    padding-left: 5px;
+}
+
+#about-us .help-content li {
+    list-style: inside;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: .75rem;
+    margin-bottom: 0.2rem;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
 
