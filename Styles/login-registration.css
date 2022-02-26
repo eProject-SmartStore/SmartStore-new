@@ -21,7 +21,7 @@ body {
 /* login-registration */
 #smartStore-header {
     box-sizing: border-box;
-    background-color: #ccc;
+    background-color: rgb(228, 228, 228);
     margin: 0px;
 }
 
@@ -69,7 +69,7 @@ body {
 
 /* */
 #smartStore-body {
-    background-color: #fff;
+    background-color: #f6f6f6;
     text-align: center;
 }
 
