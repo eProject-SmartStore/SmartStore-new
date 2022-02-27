@@ -27,7 +27,7 @@ a{
     
     padding: 5px;
   }
-  a:hover{
+  .list-pd-choose a:hover{
     border-left: solid rgb(136, 202, 247);
     font-size: 120%;
   }
@@ -36,7 +36,7 @@ a{
     width: auto;
     font-size: 120%;
   }
-  h4{
+  h5{
     border-bottom: solid black;
   }
   html{
