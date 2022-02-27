@@ -1,68 +1,95 @@
-div{
-    display: block;
-}
-.product-page{
-    margin-left:60px;
+a{
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none !important;
+  }
+  .product-page{
+    margin-left:30px;
     margin-right:60px;
     display: flex;
-}
-.list-product{
+  }
+  .list-pd{
+      margin-bottom: 15px;
+  }
+  .list-product{
     border :5px solid whitesmoke;
-    width: 270px;
+    width: 500px;
     height: auto;
-    margin: 15px;
+    margin: 5px;
     padding: 5px;
     background-color: rgb(236, 234, 234);
-
-}
-.list-product-thumn{
-    text-transform: uppercase;
-    text-align:center;
+  
+  }
+  .list-pd-choose{
+    height: 15px;
+    margin: 5px;
     
-    font-size: 20px;
-}
-.list-product-name{
-    text-align: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 16px;
-    padding-left: 30px;
-    text-transform: uppercase;
-    background-color: rgb(236, 234, 234)te;
-}
-.list-product-choose{
-    width: 160px;
-    margin-top: 10px;
-    height: 30px;
-    text-align: center;
-    margin-left: 40px;
-}
-.list-product-click{
-    margin-top: 10px;
-    text-align: right;
-}
-.list-product-checkbox{
-    margin-left: 25px;
-    border: 2px solid rgb(236, 234, 234);
-}
-.list-product-product{
-    background-color: rgb(236, 234, 234)e;
-}
-
-.list-product-click button{
-    text-align: center;
-    background-color: #ccc;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 9px;
-    margin: 0 auto;
-}
-
-.list-product-click button:hover {
-    background-color: rgb(75, 75, 75);
-    color: #fff;
+    padding: 5px;
+  }
+  a:hover{
+    border-left: solid rgb(136, 202, 247);
+    font-size: 120%;
+  }
+  .list-pd-name-cat{
+    border-bottom: 5px solid black;
+    width: auto;
+    font-size: 120%;
+  }
+  h4{
+    border-bottom: solid black;
+  }
+  html{
+    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .product-color {
+    margin-bottom: 30px;
+    
+    font-size: 10px;
+  }
+  .color-choose{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .color-choose div {
+    display: inline-block;
+  }
+  
+  .color-choose input[type="radio"] {
+    display: none;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
     cursor: pointer;
-}
+    border-radius: 50%;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  }
+  
+  .color-choose input[type="radio"]#red + label span {
+    background-color: #C91524;
+  }
+  .color-choose input[type="radio"]#blue + label span {
+    background-color: #314780;
+  }
+  .color-choose input[type="radio"]#black + label span {
+    background-color: #323232;
+  }
+  
+  .color-choose input[type="radio"]:checked + label span {
+    /*background-image: url(images/check-icn.svg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
 :root {
     --white-color: #fff;

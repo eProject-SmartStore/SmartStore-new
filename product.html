@@ -103,78 +103,69 @@
 
 <!--product-->
 <div class="product-page">
-    <div class="list-product" ><!--khung lớn-->
-        <div class="list-product-thumn">
-            <p><b>list product</b></p>
-        </div><!--tiêu đề:"tìm kiếm"-->
-        <div><!--vị trí hiển thị các đặc điểm phân loại-->
-            <div><!--phân loại 1-->
-                <div class="list-product-name">
-                    <label for="" ><b>product:</b></label>
-                </div>
-                <div>
-                    <div class="list-product-checkbox"><input type="checkbox">All Product</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Bed</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Bed Shelf</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Dinner Table</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Kitchen Table</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Makeup table</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Tea table</div>
-                    <div class="list-product-checkbox"><input type="checkbox">TV shelf</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Shoes Cabinet</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Sofa</div>
-                    <div class="list-product-checkbox"><input type="checkbox">Wardrobe</div>
-                </div>
-                
+    <div class="list-product">
+        <div class="list-pd">
+            <div class="list-pd-name">
+                <h4 class="list-pd-name-cat"><b>Categories</b></h4>
             </div>
-            <div><!--phân loại 2-->
-                <div class="list-product-name">
-                    <label for="" ><b>style:</b></label>
-                </div>
-                <div>
-                    
-                        <div class="list-product-checkbox"><input type="checkbox">All Style</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Bohemian</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Colorful</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Comfortable</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Historic</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Inner</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Modern And Comfort</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Nature</div>
-                        <div class="list-product-checkbox"><input type="checkbox">Luxurious</div>
-                    
-                </div>
+            <div>
+                <ul>
+                    <div class="list-pd-choose"><li><a href="#">All Product</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Bed</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Bed Shelf</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Dinner Table</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Kitchen Table</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Makeup table</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Tea table</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">TV shelf</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Shoes Cabinet</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Sofa</a></li></div>
+                    <div class="list-pd-choose"><li><a href="#">Wardrobe</a></li></div>
+                </ul>
             </div>
-            <div><!--phân loại 3-->
-                <div class="list-product-name">
-                    <label class=""><b>price:</b></label>
-                </div>
-                
-                    <div class="list-product-checkbox"><input type="checkbox">All Prices</div>
-                    <div class="list-product-checkbox"><input type="checkbox">1 Million Or Less</div>
-                    <div class="list-product-checkbox"><input type="checkbox">1 Million To 5 Million</div>
-                    <div class="list-product-checkbox"><input type="checkbox">5 Million To 10 Million</div>
-                    <div class="list-product-checkbox"><input type="checkbox">10 Million To 50 Million</div>
-                    <div class="list-product-checkbox"><input type="checkbox">50 Million To 100 Million</div>
-                    <div class="list-product-checkbox"><input type="checkbox">100 Million To 500 Million</div>
-                    <div class="list-product-checkbox"><input type="checkbox">More Than 500 Million</div>
-                
-            </div>
-            <div><!--phân loại 4-->
-                <div class="list-product-name">
-                    <label class="" ><b>price arrangement:</b></label>
-                </div>
-                <select class="list-product-choose" name="">
-                    <option value="">Ascending</option>
-                    <option value="">Decrease</option>
-               </select>
-            </div>
-            
         </div>
+        <div class="list-pd">
+            <div class="list-pd-name">
+                <h4 class="list-pd-name-cat"><b>Brand</b></h4>
+            </div>
+            <div>
+                <ul>
+                    <li><div class="list-pd-choose"><a href="#">Aaron’s</a></div></li>
+                    <li><div class="list-pd-choose"><a href="#">Steelcase</a></div></li>
+                    <li><div class="list-pd-choose"><a href="#">Dunelm</a></div></li>
+                    <li><div class="list-pd-choose"><a href="#">Ashley</a></div></li>
+                    <li><div class="list-pd-choose"><a href="#">Driade</a></div></li>
+                    <li><div class="list-pd-choose"><a href="#">Knoll</a></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-configuration">
+            <div class="list-pd-name">
+                <h4 class="list-pd-name-cat"><b>Color</b></h4>
+            </div>
+            <div class="product-color">
+                
+                <div class="color-choose">
+                    <div>
+                        <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                        <label for="red"><span></span></label>
+                    </div>
+                    <div>
+                        <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                        <label for="blue"><span></span></label>
+                    </div>
+                    <div>
+                        <input data-image="black" type="radio" id="black" name="color" value="black">
+                        <label for="black"><span></span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
     </div>
     <div id="product-smart-store">
         <div class="grid-row ss-product">
-            <a href="#" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
+            <a href="product_details.html" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
                 <div class="product-item-box">
                     <div class="product-img" style="background-image: url(img/product-sofa1.jpg);">
                         <img src="img/overlay.png" alt="">

@@ -5,6 +5,46 @@ html, body{
     height: 100%;
     color: #1a1b1c;
 }
+.product-small-img img{
+    height: 150px;
+    margin: 2px 2px;
+    cursor: pointer;
+    display: flex;
+    opacity: .6;
+    width: 150px;
+}
+.product-small-img{
+    float: left;
+}
+.product-small-img img:hover{
+    opacity: 1;
+}
+.product-small-img-list{
+    display: flex;
+    
+}
+.product{
+
+    margin-top: 5px;
+    margin-left: 200px;
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+.img-container img{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 300px;
+    width: 550px;
+}
+.img-container{
+    
+
+}
+
+.product-detail-content{
+    
+}
 
 .product-detail-quality {
     display: flex;

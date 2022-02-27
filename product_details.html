@@ -100,8 +100,31 @@
             </div>
         </div>
     </div>
+    
     <div id="product-detail">
+        
         <div class="product-detail-content">
+            <div class="product">
+                <div class="product-small-img">
+                    <div class="product-small-img-list">
+                        <img src="img/product-sofa1.jpg" onclick="myFunction(this)" alt="" >
+                        <img src="img/product-sofa2.jpg" onclick="myFunction(this)" alt="" >
+                    </div>
+                    <div class="product-small-img-list">
+                        
+                    </div>
+                    <div class="product-small-img-list">
+                        <img src="img/product-sofa3.jpg" onclick="myFunction(this)" alt="" >
+                        <img src="img/product-sofa4.jpg" onclick="myFunction(this)" alt="" >
+                    </div>
+                    <div class="product-small-img-list">
+                        
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/product-sofa1.jpg" alt="" id="imageBox">
+                </div>
+            </div>
             <div class="product-detail-quality">
                 <div class="product-detail-content-fivestar">
                     <i class="fas fa-star "></i>
@@ -118,6 +141,7 @@
             <div class="product-detail-content-name">
                 <h2>Bohemia Sofa Bed</h2>
             </div>
+            
             <div class="product-configuration">
                 <div class="product-color">
                     <span>Color :</span>
@@ -299,5 +323,12 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction(smallImg)
+        {
+            var fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
 </body>
 </html>
