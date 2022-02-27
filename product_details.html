@@ -8,6 +8,9 @@
     <link rel="icon" href="img/logo-smartstore.png" type="image/x-icon" />
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="styles/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="Styles/product-detail.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -97,7 +100,110 @@
             </div>
         </div>
     </div>
+    <div id="product-detail">
+        <div class="product-detail-content">
+            <div class="product-detail-quality">
+                <div class="product-detail-content-fivestar">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="product-detail-quality-like">
+                    Wish list
+                    <i class="far fa-heart "></i>
+                </div>
+            </div>
+            <div class="product-detail-content-name">
+                <h2>Bohemia Sofa Bed</h2>
+            </div>
+            <div class="product-configuration">
+                <div class="product-color">
+                    <span>Color :</span>
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-product-detail">
+                <div class="price-product">
+                    <span>334.00 $</span>
+                </div>
+                <div class="text-price-product">
+                    <i>The price shown <br> excludes V.A.T</i>
+                </div>
+                <div class="btn-buy-product">
+                    <a href="#" class="cart-btn">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <button class="tablinks active" data-electronic="allproducts" >Product Information</button>
+            <button class="tablinks" data-electronic="Microcontrollers">Specifications</button>
+            <button class="tablinks" data-electronic="module">Comment</button>
+        </div>
+        <div class="wrapper_tabcontent">
+            <div id="allproducts" class="tabcontent active">
+                <h3>Product Information</h3>
+                <div class="text--product">
+                    <h4>Designer:</h4>
+                    <p>Philippe Starck</p>
 
+                    <h4>Product code:</h4>
+                    <p>D20844A379017</p>
+
+                    <h4>Old product code:</h4>
+                    <p>9852084</p>
+
+                    <h4>Featured</h4>
+                    <p>Monobloc stackable armchair in white (RAL 9001),</br> dark gray (Pantone 446U), pastel pink (DIC C104)</br> or lavender gray (DIC C285) in polypropylene. Indoor/outdoor use.</p>
+                </div>
+            </div>
+
+            <div id="Microcontrollers" class="tabcontent">
+                <h3>Specifications</h3>
+                <div class="text--product">
+                    <h4>Material:</h4>
+                    <p>polypropylene</p>
+
+                    <h4>Height:</h4>
+                    <p>83 cm</p>
+
+                    <h4>Width:</h4>
+                    <p>54.5 cm</p>
+
+                    <h4>Depth:</h4>
+                    <p>52.5 cm</p>
+
+                </div>
+            </div>
+
+            <div id="module" class="tabcontent">
+                <h3>Comment</h3>
+                <div class="form">
+                    <form action="" id="form1">
+                        <input type="text" id="fname" name="fname" placeholder="Name"><br>
+                        <input type="text" id="femail" name="femail" placeholder="Email"><br>
+                        <input type="text" id="fcontent" name="fcontent" placeholder="Comment"><br>
+                        <input type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/product-detail.js"></script>
     <!--drag-wrapper-->
     <div id="drag-wrapper">
         <a href="#">

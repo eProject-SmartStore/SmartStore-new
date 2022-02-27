@@ -1,0 +1,232 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+    color: #1a1b1c;
+}
+
+.product-detail-quality {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+ .product-detail-quality-like {
+    font-size: 20px;
+     color: #A9A9A9;
+     margin-right: 120px;
+}
+
+.product-detail-quality-like i {
+    color: #707070;
+    padding:0 10px;
+}
+
+.product-detail-quality-like i:hover {
+    color: tomato;
+    fill: tomato;
+}
+
+.product-detail-content-fivestar {
+    margin-left: 6px;
+    margin-right: auto;
+}
+
+.product-detail-content-name{
+    font-weight: 300px;
+    font-size: 30px;
+    color: #43484D;
+    letter-spacing: -2px;
+    margin-left: 120px;
+}
+
+.product-color {
+    margin-bottom: 30px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+.color-choose{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.color-choose div {
+    display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+    display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.color-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+.color-choose input[type="radio"]#red + label span {
+    background-color: #C91524;
+}
+.color-choose input[type="radio"]#blue + label span {
+    background-color: #314780;
+}
+.color-choose input[type="radio"]#black + label span {
+    background-color: #323232;
+}
+
+.color-choose input[type="radio"]:checked + label span {
+    /*background-image: url(images/check-icn.svg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.price-product-detail {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.price-product span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 60px;
+
+}
+
+.text-price-product{
+    font-size: 18px;
+    color: #A9A9A9;
+    margin-right: 350px;
+
+}
+
+.btn-buy-product .cart-btn{
+    color: chocolate;
+}
+
+.cart-btn {
+    display: inline-block;
+    background-color: #A9A9A9;
+    border-radius: 6px;
+    font-size: 16px;
+
+    text-decoration: none;
+    padding: 12px 60px;
+    transition: all .5s;
+    margin-right: 10px;
+}
+.cart-btn:hover {
+    background-color: #CC4949;
+}
+
+.tabs{
+    display:flex;
+    margin-top: 80px;
+}
+.tablinks {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight:600;
+    transition: 0.2s ease;
+}
+.tablinks:hover{
+    background:#707070;
+    color:#fff;
+}
+
+.tablinks.active {
+    background:#707070;
+    color:#fff;
+}
+
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent p {
+    color: #333;
+    font-size: 16px;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.form {
+    text-align: center;
+}
+#form1 {
+    width: 600px;
+    background: #fff;
+    margin: 0 auto;
+}
+#form1 input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #555;
+    display: block;
+    line-height: 1.2;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0 20px 0 23px;
+    border: 0;
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 5px 20px 0 rgba(0,0,0,.05);
+    -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 5%);
+    -o-box-shadow: 0 5px 20px 0 rgba(0,0,0,.05);
+    -ms-box-shadow: 0 5px 20px 0 rgba(0,0,0,.05);
+}
+#form1 input[type=text]:focus{
+    border: 0;
+    outline: none;
+}
+#form1 #fcontent {
+    outline: none;
+    min-height: 150px;
+}
+#form1 input[type=submit] {
+    background-color: #222222;
+    height: 42px;
+    padding: 5px 20px;
+    border-radius: 21px;
+    font-size: 14px;
+    text-tranforms: uppercase;
+    color: #A9A9A9;
+    border: 0;
+}
+#form1 input[type="submit"]:hover {
+    background:#CC4949;
+    transition: all .5s;
+}
+
+.text--product{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    border: 3px solid #A9A9A9;
+    border-radius: 30px;
+    padding: 10px;
+}
