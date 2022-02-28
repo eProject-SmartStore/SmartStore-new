@@ -135,12 +135,12 @@
 }
 
 #product-smart-store .product-quality--like {
-    font-size: 12px;
+    font-size: 17px;
 }
 
 #product-smart-store .product-quality--like:hover {
-    color: tomato;
-    fill: tomato;
+    color: rgb(247, 20, 20);
+    fill: rgb(247, 20, 20);
 }
 
 #product-smart-store .product-quality--fivestar {

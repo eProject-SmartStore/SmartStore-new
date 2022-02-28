@@ -1,5 +1,6 @@
 html {
     font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
     font-size: 16px;
     text-size-adjust: 100%;
     box-sizing: border-box;
@@ -29,6 +30,11 @@ body {
     box-sizing: border-box;
     border-bottom: 2px solid #000;
     display: block;
+}
+
+.like > i{
+    color: rgb(247, 20, 20);
+    font-weight: 900;
 }
 
 /*header */
@@ -922,6 +928,7 @@ li {
     border: none;
     background-color: rgb(235, 235, 235);
     padding: 5px;
+    cursor: pointer;
 }
 
 #cart .product-content-btn button:hover {
@@ -1009,6 +1016,18 @@ li {
 #cart .cart-check_out a:hover {
     background-color: rgb(156, 156, 156);
 } 
+
+#cart .add-cart {
+    border: none;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#cart .add-cart:hover {
+    opacity: 0.6;
+}
 
 
 /***************
