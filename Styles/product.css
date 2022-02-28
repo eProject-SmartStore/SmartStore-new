@@ -3,6 +3,7 @@ a{
 }
   ul{
     list-style-type: none !important;
+    padding: 10px;
   }
   .product-page{
     margin-left:30px;
