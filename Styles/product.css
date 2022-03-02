@@ -14,27 +14,43 @@ a{
       margin-bottom: 15px;
   }
   .list-product{
-    /* border :5px solid whitesmoke; */
     width: 420px;
     height: 100%;
-    margin: 5px;
+    margin-top: 15px;
     padding: 5px;
-    background-color: rgb(236, 234, 234);
+    background-color: rgb(247, 247, 247);
     line-height: 2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  }
+  .list-product ul {
+    line-height: 2;
+    padding-left: 20px;
+  }
+
+  .list-product ul a {
+    padding-left: 10px;
   }
   .list-pd-choose{
-    height: 15px;
-    margin: 5px;
-    padding: 5px;
+    height: 30px;
   }
   .list-pd-choose a:hover{
-    border-left: solid rgb(136, 202, 247);
+    border-left: 2px solid rgb(124, 124, 124);
     font-size: 120%;
+    font-weight: 600;
   }
+
+  .active-list {
+    border-left: 2px solid rgb(124, 124, 124);
+    font-size: 120%;
+    font-weight: 600;
+  }
+
   .list-pd-name-cat{
-    border-bottom: 5px solid black;
+    border-bottom: 1px solid black;
     width: auto;
     font-size: 120%;
+    padding-left: 5px;
   }
   h5{
     border-bottom: solid black;

@@ -1,6 +1,6 @@
 html {
-    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* font-family: 'Work Sans', sans-serif; */
+    /* font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: 'Work Sans', sans-serif !important;
     font-size: 16px;
     text-size-adjust: 100%;
     box-sizing: border-box;
@@ -37,6 +37,47 @@ body {
     font-weight: 900;
 }
 
+
+#follow-email {
+    background-color: rgb(199, 199, 199);
+}
+
+#follow-email .follow-email {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#follow-email .email {
+    padding: 8px 10px 5px 10px;
+    margin-left: 0px;
+}
+
+#follow-email .email-content {
+    margin-right: 50px;
+}
+
+#follow-email .email-content p {
+    margin: 2px 5px;
+    font-size: 17px;
+}
+
+#follow-email .follow {
+    margin-right: 0px;
+    padding: 8px 10px 5px 10px;
+
+}
+
+#follow-email .follow img {
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+#follow-email .d-flex {
+    display: flex;
+}
+
+
 /*header */
 #header {
     margin-top: 0px;
@@ -71,7 +112,7 @@ body {
 
 #header .search-button {
     width: 94px;
-    height: 37px;
+    height: 38px;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -90,7 +131,7 @@ body {
 #header .search-button .button-text {
     margin-bottom: 8px;
     color: rgb(48, 59, 65);
-    font-family: 'Nunito Sans',Arial;
+    /* font-family: 'Nunito Sans',Arial; */
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0;
@@ -117,9 +158,8 @@ body {
 
 #header .list ul {
     display: block;
-    width: 1200px;
+    width: 932px;
     padding: 0px;
-
 }
 
 #header .list  ul > li {
@@ -769,7 +809,7 @@ a {
     color: rgb(59, 58, 58);
     font-size: 15px;
     padding-bottom: 0px;
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 400;
     line-height: 1.4;
     margin-top: 0;
@@ -792,6 +832,7 @@ li {
 #contact-content {
     width: 1200px;
     margin-bottom: 30px;
+    margin-top: 30px;
     display: block;
 }
 
@@ -809,7 +850,7 @@ li {
 }
 
 #contact-content .contact-content-text p{
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 400;
     font-size: .79rem;
     line-height: 1.4;
@@ -885,17 +926,8 @@ li {
 
 }
 
-#cart h2{
-    font-size: 30px;
-    padding: 0 0.3125rem;
-    vertical-align: middle;
-    max-width: 500px;
-    display: inline-block;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    opacity: 0.8;
-    margin: 5px 120px;
+#cart {
+    margin-top: 20px;
 }
 
 #cart tr th{
@@ -915,6 +947,7 @@ li {
     margin-top:-5px;
     font-weight: 550;
     font-size: 17px;
+    margin-left: 0px;
 }
 
 #cart .cart-product-content h4:hover {
@@ -1006,6 +1039,25 @@ li {
     margin: 20px 0px 30px 860px;
 }
 
+#cart .wish-product {
+    width: 1200px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#cart .wish-product-ss a {
+    padding: 15px 150px !important;
+}
+#cart .wish-product a {
+    width: 400px;
+    padding: 15px 100px;
+    background-color: #ccc;
+}
+
+#cart .wish-product a:hover {
+    background-color: rgb(156, 156, 156);
+} 
+
 #cart .cart-check_out a {
     padding: 15px 130px;
     background-color: #ccc;
@@ -1089,7 +1141,7 @@ li {
 }
 
 #brand-blog .headquarters-brand span {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 400;
     font-size: .75rem;
     line-height: 0;
@@ -1123,7 +1175,7 @@ li {
 }
 
 #brand-blog .blog-s .content p {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 400;
     font-size: .75rem;
     line-height: 1.4;
@@ -1230,7 +1282,7 @@ li {
 }
 
 #about-us .ss--box p {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 400;
     font-size: .75rem;
     line-height: 1.4;
@@ -1269,7 +1321,7 @@ li {
 
 #about-us .help-content li {
     list-style: inside;
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 400;
     font-size: .75rem;
     margin-bottom: 0.2rem;
@@ -1277,6 +1329,64 @@ li {
 }
 
 
+/* */
+#smartStore-header {
+    box-sizing: border-box;
+    background-color: rgb(234 234 234);
+    margin: 0px;
+}
 
+#smartStore-header .smartStore-header {
+    width: 1200px;
+}
 
+#smartStore-header .smartStore {
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 0;
+}
+
+#smartStore-header .login-registration{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#smartStore-header .item-cart {
+    border-left: 1px solid rgb(129, 129, 129);
+    padding-left: 10px;
+}
+
+#smartStore-header .item-cart-s {
+    opacity: 0.6;
+}
+
+#smartStore-header .item-cart-s:hover {
+    opacity: 1;
+}
+
+#smartStore-header .login-registration .item {
+    margin: 10px 20px;
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 530;
+}
+
+#smartStore-header .help{
+    margin: 22px 15px 22px 0px;
+    font-size: .875rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+#smartStore-header .help a {
+    align-items: center;
+    opacity: 0.8;
+}
+
+#smartStore-header .help a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
 
