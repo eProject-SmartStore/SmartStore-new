@@ -16,6 +16,22 @@ body {
     margin: 0px auto;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(235, 235, 235);
+    /* border-radius: 100rem; */
+}
+
+body::-webkit-scrollbar-thumb {
+    /* border-radius: 100rem; */
+    background-image: linear-gradient(to bottom, #000, rgb(122, 122, 122));
+    height: 100px;
+}
+
+
 *{
     margin:  0px auto;
 }
@@ -1213,7 +1229,7 @@ li {
 }
 
 .background .product-brand{
-    width: 1200px;
+    width: 1130px;
     background-color: #fff;
     margin-bottom: 10px;
 }

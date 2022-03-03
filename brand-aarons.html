@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/product.css">
+    <link rel="stylesheet" href="Styles/product-demo.css">
+    <script src="JS/modernizr.custom.js"></script>
     <link rel="stylesheet" href="styles/themify-icons-font/themify-icons/themify-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="compare-basket">
+        <button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Compare</span></button>
+    </div>
+    
     <div id="follow-email">
         <div class="follow-email">
             <div class="email d-flex">
@@ -115,8 +120,7 @@
                                 <li><a href="brand-driade.html">Driade</a></li>
                                 <li><a href="brand-knoll.html">Knoll</a></li>
                             </ul>
-                        </li>                    
-                        <li><a href="compare.html">Compare</a></li>
+                        </li>
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="contact_us.html">Contact Us</a>
                         </li>
@@ -170,160 +174,141 @@
         <div class="name">
             <h1>Products Of Aaron’s</h1>
         </div>
-        <div class="grid-row ss-product s-product-brand">
-            <a href="#" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
-                <div class="product-item-box">
-                    <div class="product-img" style="background-image: url(img/product-sofa1.jpg);">
-                        <img src="img/overlay.png" alt="">
-                        <div class="product-img-favourite-label">
-                            <p>LIKE</p>
+      
+            <div class="view">
+                <section class="grid">
+                    <!-- Products -->
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-bed1.jpg" alt="Product 1" />
+                            <a href=""><h3 class="product__title">Madrid Wooden Ottoman Bed</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$679.48 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <div class="product-img-discount">
-                            <p class="product-img-discount-percent">55%</p>
-                            <p class="product-img-discount-reduce">SALE</p>
-                        </div>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                    <div class="product-info">
-                        <p class="product-info--name">Eddie Velvet 2 Seater Compact Tub Sofa</p>
-                        <span class="product-info--price">338.98 $</span>
-                        <div class="product-quality">
-                            <i class="far fa-heart product-quality--like"></i>
-                            <div class="product-quality--fivestar">
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                            </div>
-                            <span class="product-quality--sold">Sold  640</span>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-bed2.jpg" alt="Product 2" />
+                            <a href=""><h3 class="product__title">Side Lift Ottoman Bed</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$447.99 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <span class="product-info--place">Ha Noi</span>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                </div>
-            </a>
-            <a href="#" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
-                <div class="product-item-box">
-                    <div class="product-img" style="background-image: url(img/product-sofa2.jpg);">
-                        <img src="img/overlay.png" alt="">
-                        <div class="product-img-favourite-label">
-                            <p>LIKE</p>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-bed3.jpg" alt="Product 3" />
+                            <a href=""><h3 class="product__title">Waverley Leather Ottoman Bed</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$339.09 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <div class="product-img-discount">
-                            <p class="product-img-discount-percent">20%</p>
-                            <p class="product-img-discount-reduce">SALE</p>
-                        </div>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                    <div class="product-info">
-                        <p class="product-info--name">Rosa Fabric 2 Seater Sofa</p>
-                        <span class="product-info--price">815.65 $</span>
-                        <div class="product-quality">
-                            <i class="far fa-heart product-quality--like"></i>
-                            <div class="product-quality--fivestar">
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                            </div>
-                            <span class="product-quality--sold">Sold  230</span>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-sofa1.jpg" alt="Product 4" />
+                            <a href=""><h3 class="product__title">Eddie Velvet 2 Seater Tub Sofa</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$338.98 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <span class="product-info--place">Ha Noi</span>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                </div>
-            </a>
-            <a href="#" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
-                <div class="product-item-box">
-    
-                    <div class="product-img" style="background-image: url(img/product-sofa3.jpg);">
-                        <img src="img/overlay.png" alt="">
-                        <div class="product-img-favourite-label">
-                            <p>LIKE</p>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-sofa2.jpg" alt="Product 5" />
+                            <a href=""><h3 class="product__title">Rosa Fabric 2 Seater Sofa</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$815.65 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <div class="product-img-discount">
-                            <p class="product-img-discount-percent">10%</p>
-                            <p class="product-img-discount-reduce">SALE</p>
-                        </div>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                    <div class="product-info">
-                        <p class="product-info--name">Aurora Grey Velvet Sofa Bed</p>
-                        <span class="product-info--price">257.35 $</span>
-                        <div class="product-quality">
-                            <i class="far fa-heart product-quality--like"></i>
-                            <div class="product-quality--fivestar">
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                            </div>
-                            <span class="product-quality--sold">Sold  600</span>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-sofa3.jpg" alt="Product 6" />
+                            <a href=""><h3 class="product__title">Aurora Grey Velvet Sofa Bed</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$257.35 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <span class="product-info--place">Ha Noi</span>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                </div>
-            </a>
-            <a href="#" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
-                <div class="product-item__box">
-    
-                    <div class="product-img" style="background-image: url(img/product-sofa4.jpg);">
-                        <img src="img/overlay.png" alt="">
-                        <div class="product-img-favourite-label">
-                            <p>LIKE</p>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-sofa4.jpg" alt="Product 7" />
+                            <a href=""><h3 class="product__title">Franco Side Table</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$107.58 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <div class="product-img-discount">
-                            <p class="product-img-discount-percent">20%</p>
-                            <p class="product-img-discount-reduce">SALE</p>
-                        </div>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                    <div class="product-info">
-                        <p class="product-info--name">Franco Side Table</p>
-                        <span class="product-info--price">107.58 $</span>
-                        <div class="product-quality">
-                            <i class="far fa-heart product-quality--like"></i>
-                            <div class="product-quality--fivestar">
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                            </div>
-                            <span class="product-quality--sold">Sold  170</span>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-table1.jpg" alt="Product 8" />
+                            <a href=""><h3 class="product__title">Caprice Side Table</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$134.82 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <span class="product-info--place">Ha Noi</span>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                </div>
-            </a>
-            <a href="#" class="grid-column-2-2 m-grid-column-2-4 s-grid-column-3 ss-grid-column-6 ss-product-item">
-                <div class="product-item-box">
-    
-                    <div class="product-img" style="background-image: url(img/product-table1.jpg);">
-                        <img src="img/overlay.png" alt="">
-                        <div class="product-img-favourite-label">
-                            <p>LIKE</p>
+                    <div class="product">
+                        <div class="product__info">
+                            <img class="product__image" src="img/product-table2.jpg" alt="Product 9" />
+                            <a href=""><h3 class="product__title">Larson 2 Drawer Bedside Table</h3></a>
+                            <span class="product__year extra highlight">2011</span>
+                            <span class="product__region extra highlight">Douro</span>
+                            <span class="product__varietal extra highlight">Touriga Nacional</span>
+                            <span class="product__alcohol extra highlight">13%</span>
+                            <span class="product__price highlight">$93.97 </span>
+                            <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
                         </div>
-                        <div class="product-img-discount">
-                            <p class="product-img-discount-percent">10%</p>
-                            <p class="product-img-discount-reduce">SALE</p>
-                        </div>
+                        <label class="action action--compare-like"><input class="check-hidden" type="checkbox" /><i class="far fa-heart product-quality--like"></i></label>
+                        <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
                     </div>
-                    <div class="product-info">
-                        <p class="product-info--name">Caprice Side Table</p>
-                        <span class="product-info--price">134.82 $</span>
-                        <div class="product-quality">
-                            <i class="far fa-heart product__quality--like"></i>
-                            <div class="product-quality--fivestar">
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                                <i class="fas fa-star "></i>
-                            </div>
-                            <span class="product-quality--sold">Sold  550</span>
-                        </div>
-                        <span class="product-info--place">Ha Noi</span>
-                    </div>
-                </div>
-            </a>
+                </section>
+            </div>
+            <section class="compare">
+                <button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
+            </section>
         </div>
     </div>
 </div>
@@ -423,5 +408,8 @@
         </div>
     </div>
 </div>
+
+<script src="JS/classie.js"></script>
+<script src="JS/product.js"></script>
 </body>
 </html>

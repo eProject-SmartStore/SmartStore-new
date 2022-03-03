@@ -408,7 +408,7 @@ h5{
     position: fixed;
     top: 0;
     left: 0;
-    background: #212227;
+    background: rgb(158, 158, 158);
     z-index: 1000;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
