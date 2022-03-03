@@ -6,15 +6,15 @@ ul{
     padding: 10px;
 }
 .product-page{
-    margin-left:30px;
-    /* margin-right:60px; */
+    margin-left: 85px;
+    margin-right:70px;
     display: flex;
 }
 .list-pd{
     margin-bottom: 15px;
 }
 .list-product{
-    width: 420px;
+    width: 300px;
     height: 100%;
     margin-top: 15px;
     padding: 5px;
@@ -176,10 +176,9 @@ h5{
     display: inline-block;
     vertical-align: top;
     min-width: 16em;
-    margin: 0 1em 2.5em;
-    padding: 1.5em 1.5em 2em;
+    margin: 0 0.6em 2.5em;
+    padding: 0em 0em 1em;
     box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 30%);
-    border-radius: 5px;
 }
 .product:hover{
     cursor: pointer;
@@ -200,7 +199,7 @@ h5{
 
 .product__info > span {
     display: block;
-    padding: 1em 0;
+    /* padding: 1em 0; */
 }
 
 /*since we'll be using the product info inside of the comparison, we'll hide the extra info for the grid view*/
@@ -222,14 +221,14 @@ h5{
 }
 
 .product__title {
-    font-size: 150%;
+    font-size: 120%;
     margin: 1em 0 0;
     min-height: 3em;
 }
 
 .product__price {
     font-weight: bold;
-    color: #797BED;
+    color: #707070;
 }
 
 .action {
@@ -736,10 +735,11 @@ h5{
 
 .page-controller--button {
     min-width: 4rem;
-    display: inline-flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-align: center;
 }
 
 .page-controller--pre {
@@ -750,14 +750,29 @@ h5{
     margin-left: 15px;
 }
 
-.page-controller--number, .page-controller--dot {
-
-    margin: 0 1.5rem 0;
+.page-controller--number, .page-controller--dot  {
+    margin: 0 1rem 0;
 }
 
-.page-controller--current {
+.page-controller--number a:hover {
     background-color: #A9A9A9;
     border-radius: 10rem;
     color: #f6f6f6;
+    opacity: 1;
+}
+
+.page-controller--number a {
+    display: block;
+    background-color: #A9A9A9;
+    border-radius: 10rem;
+    color: #f6f6f6;
+    opacity: 0.2;
+}
+
+.page-controller--current a {
+    background-color: #A9A9A9;
+    border-radius: 10rem;
+    color: #f6f6f6;
+    opacity: 1;
 }
 
