@@ -87,3 +87,4 @@ function addOnes(j) {
 function removeOnes(j) {
     return nowOne[j].classList.remove('removeOne');
 }
+

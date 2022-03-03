@@ -43,7 +43,7 @@ html, body{
 }
 
 .product-detail-content{
-    
+    margin-bottom: 30px;
 }
 
 .product-detail-quality {
@@ -75,7 +75,7 @@ html, body{
 }
 
 .product-detail-content-name{
-    font-weight: 300px;
+    /*font-weight: 300px;*/
     font-size: 30px;
     color: #43484D;
     letter-spacing: -2px;
@@ -269,4 +269,8 @@ html, body{
     border: 3px solid #A9A9A9;
     border-radius: 30px;
     padding: 10px;
+}
+
+.wrapper_tabcontent{
+    margin: 10px 0 30px 0;
 }
