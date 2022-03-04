@@ -1,6 +1,13 @@
 a{
     text-decoration: none;
 }
+
+.like >i{
+    color: #C91524;
+    font-weight: 900;
+    
+}
+
 ul{
     list-style-type: none !important;
     padding: 10px;

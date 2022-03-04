@@ -48,11 +48,6 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 
-.like > i{
-    color: rgb(247, 20, 20);
-    font-weight: 900;
-}
-
 
 #follow-email {
     background-color: rgb(199, 199, 199);
@@ -726,6 +721,7 @@ a {
 } */
 
 #footer .logo-brand {
+    display: flex;
     background-color: rgb(236, 236, 236); 
     padding: 20px;
     margin: 0 auto;
