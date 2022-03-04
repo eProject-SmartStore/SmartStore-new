@@ -8,7 +8,7 @@ a{
     
 }
 
-ul{
+.product-page ul{
     list-style-type: none !important;
     padding: 10px;
 }
