@@ -136,18 +136,26 @@ btnWishlist.forEach(function(btn) {
         var productPrice = product2.querySelector('.product__price span').innerText
     
         var productArray = new Array(productImg, productName, productPrice)
-        wishListProduct.push(productArray);
 
-        sessionStorage.setItem("wishListProduct", JSON.stringify(wishListProduct))
-        
-        var wishProductName = document.querySelectorAll('.wish-list .wish-title').innerHTML
-        for (var i = 0; i < product.length; i++) {
-            if ( product.className == 'action action--compare-like like' ) {
+        var check = 0
+        for (var i = 0; i < wishListProduct.length; i++) {
+            if ( wishListProduct[i][1] == productName) {
+                check = 1; 
                 product.classList.remove('like')
+                break
             }
-            else {
-                product.classList.add('like')
-            }
+
+            // if ( product.className == 'action action--compare-like like' ) {
+            //     product.classList.remove('like')
+            // }
+            // else {
+            //     product.classList.add('like')
+            // }
+        }
+        if (check == 0) {
+            product.classList.add('like')
+            wishListProduct.push(productArray);
+            sessionStorage.setItem("wishListProduct", JSON.stringify(wishListProduct))
         }
 
     })
