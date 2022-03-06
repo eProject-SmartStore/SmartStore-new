@@ -11,15 +11,15 @@ function openTabs(el) {
     var electronic = btn.dataset.electronic;
 
     tabContent.forEach(function(el) {
-        el.classList.remove("active");
+        el.classList.remove("active1");
     });
 
     tabLinks.forEach(function(el) {
-        el.classList.remove("active");
+        el.classList.remove("active1");
     });
 
-    document.querySelector("#" + electronic).classList.add("active");
+    document.querySelector("#" + electronic).classList.add("active1");
 
 
-    btn.classList.add("active");
+    btn.classList.add("active1");
 }

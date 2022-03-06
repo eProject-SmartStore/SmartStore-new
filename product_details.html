@@ -144,11 +144,11 @@
     </div>
     <div class="product__info">
         <div class="title">
-            <h1>Madrid Wooden</br> Ottoman Bed</h1>
+            <h1>Madrid Wooden Ottoman Bed</h1>
             <span>COD: 45999</span>
         </div>
         <div class="price">
-            $ <span>77.93</span>
+            <span>$</span> 77.93
         </div>
         <div class="variant">
             <h3>COLOR</h3>
@@ -161,13 +161,66 @@
             <h3>PRODUCT INFORMATION</h3>
             <ul>
                 <li>Designer: Philippe Starck</li>
-
-                <li>Featured: Monobloc stackable</br> armchair in white,dark gray</li>
+                <li>Featured: Monobloc stackable</li>
+            </ul>
+            <ul>
+                <li>Designer: Philippe Starck</li>
+                <li>Featured: Monobloc stackable</li>
             </ul>
         </div>
         <button class="buy--btn">ADD TO CART</button>
     </div>
 </section>
+<div class="tabs">
+    <button class="tablinks active" data-electronic="allproducts" >Product Information</button>
+    <button class="tablinks" data-electronic="Microcontrollers">Specifications</button>
+    <button class="tablinks" data-electronic="module">Comment</button>
+</div>
+<div class="wrapper_tabcontent">
+    <div id="allproducts" class="tabcontent active1">
+        <div class="text--product">
+            <h4>Designer:</h4>
+            <p>Philippe Starck</p>
+
+            <h4>Product code:</h4>
+            <p>D20844A379017</p>
+
+            <h4>Old product code:</h4>
+            <p>9852084</p>
+
+            <h4>Featured</h4>
+            <p>Monobloc stackable armchair in white (RAL 9001),</br> dark gray (Pantone 446U), pastel pink (DIC C104)</br> or lavender gray (DIC C285) in polypropylene. Indoor/outdoor use.</p>
+        </div>
+    </div>
+
+    <div id="Microcontrollers" class="tabcontent">
+        <div class="text--product">
+            <h4>Material:</h4>
+            <p>polypropylene</p>
+
+            <h4>Height:</h4>
+            <p>83 cm</p>
+
+            <h4>Width:</h4>
+            <p>54.5 cm</p>
+
+            <h4>Depth:</h4>
+            <p>52.5 cm</p>
+
+        </div>
+    </div>
+
+    <div id="module" class="tabcontent">
+        <div class="form">
+            <form action="" id="form1">
+                <input type="text" id="fname" name="fname" placeholder="Name"><br>
+                <input type="text" id="femail" name="femail" placeholder="Email"><br>
+                <input type="text" id="fcontent" name="fcontent" placeholder="Comment"><br>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+</div>
 <!--drag-wrapper-->
 <div id="drag-wrapper">
     <a href="#">
@@ -270,5 +323,6 @@
         fullImg.src = smallImg.src;
     }
 </script>
+<script src="JS/product-detail.js"></script>
 </body>
 </html>
