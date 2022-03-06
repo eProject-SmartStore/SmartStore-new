@@ -228,14 +228,24 @@ h5{
 }
 
 .product__title {
-    font-size: 120%;
-    margin: 1em 0 0;
+    cursor:grab;
+    font-weight: 700;
+    font-size: 130%;
+    margin: 0.7em 0 0;
     min-height: 3em;
 }
 
 .product__price {
-    font-weight: bold;
+    font-size: 23px;
+    font-weight: 600;
     color: #707070;
+}
+
+.in-stock {
+    margin: 10px;
+    font-weight: 600;
+    opacity: 0.5;
+    font-size: 17px;
 }
 
 .action {

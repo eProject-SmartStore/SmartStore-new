@@ -161,6 +161,29 @@ body::-webkit-scrollbar-thumb {
     background-color: #ccc;
 }
 
+#header .icon-item{
+    position: relative;
+}
+
+#header .number-product-cart{
+    position: absolute;
+    min-height: 19px;
+    min-width: 14px;
+    padding: 1px 5px;
+    background-color: rgb(235, 235, 235);
+    font-size: 12px;
+    border-radius: 100%;
+    color: #000;
+    font-weight: 600;
+}
+.m-basket {
+    margin: -5px 0px 0px 45px ;
+}
+.m-favourites {
+    margin: -5px 0px 0px 55px ;
+}
+
+
 #header .list {    
     border-bottom: 2px solid #e5e5e5;
     display: block;
@@ -934,9 +957,6 @@ li {
 /************* 
     cart.html 
 **************/
-#cart{
-
-}
 
 #cart {
     margin-top: 20px;
