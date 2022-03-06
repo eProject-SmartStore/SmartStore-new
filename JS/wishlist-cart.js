@@ -76,6 +76,7 @@ cartDelete()
 cartTotal()
 showCountCartProduct()
 
+
 function showCountCartProduct() {
     document.querySelector("#header .m-basket").innerHTML = cartListProduct.length
 }
