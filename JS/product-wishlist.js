@@ -1,5 +1,5 @@
 
-var wishListProduct = new Array();
+var wishListProduct = []
 
 const btnWishlist = document.querySelectorAll('.product-page .product-quality--like')
 btnWishlist.forEach(function(btn) {
@@ -12,22 +12,17 @@ btnWishlist.forEach(function(btn) {
         var productName = product2.querySelector('h3').innerText
         var productPrice = product2.querySelector('.product__price span').innerText
     
-        var productArray = new Array(productImg, productName, productPrice)
+        var productArray = [productImg, productName, productPrice]
 
         var check = 0
         for (var i = 0; i < wishListProduct.length; i++) {
             if ( wishListProduct[i][1] == productName) {
                 check = 1; 
                 product.classList.remove('like')
+                wishListProduct.splice(i, 1)
+                showWishListProduct_Page()
                 break
             }
-
-            // if ( product.className == 'action action--compare-like like' ) {
-            //     product.classList.remove('like')
-            // }
-            // else {
-            //     product.classList.add('like')
-            // }
         }
         if (check == 0) {
             product.classList.add('like')
@@ -64,7 +59,7 @@ function showWishListProduct_Page() {
     var wishListProduct = JSON.parse(wishList)
     var wishProduct = ""
     for (let i = 0; i < wishListProduct.length; i++) {
-        wishProduct += '<tr><td><div class="cart-product-content"><img src="'+ wishListProduct[i][0] +'" width="100px" height="100px" alt=""><div class="product-content"><a href=""><h4 class="wish-title">' + wishListProduct[i][1] + '</h4></a><span>Estimated delivery within 5 working days</span><div class="product-content-btn"><button class="btn-remove" type="button">Remove</button></div></div></div></td><td><div class="cart-avai-content"><span style="opacity: 0.7;">100 in stock</span></div></td><td class="unit-discount"><p>$<span>0</span></p></td><td class="unit-price"><p>$<span>' + wishListProduct[i][2] + '</span></p></td><td><button class="add-cart"">ADD TO CART</button></td></tr>'
+        wishProduct += '<tr><td><div class="cart-product-content"><img src="'+ wishListProduct[i][0] +'" width="100px" height="100px" alt=""><div class="product-content"><h4 class="wish-title">' + wishListProduct[i][1] + '</h4><span>Estimated delivery within 5 working days</span><div class="product-content-btn"><button class="btn-remove" type="button">Remove</button></div></div></div></td><td><div class="cart-avai-content"><span style="opacity: 0.7;">100 in stock</span></div></td><td class="unit-discount"><p>$<span>0</span></p></td><td class="unit-price"><p>$<span>' + wishListProduct[i][2] + '</span></p></td><td><button class="add-cart"">ADD TO CART</button></td></tr>'
     }
 
     document.querySelector(".wish-list tbody").innerHTML = wishProduct
@@ -88,7 +83,6 @@ function wishDelete () {
                     wishListProduct.splice(j, 1)
                 }
             }
-            console.log(wishListProduct)
         })
     }
 }

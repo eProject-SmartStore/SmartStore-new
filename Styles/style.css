@@ -168,7 +168,7 @@ body::-webkit-scrollbar-thumb {
 #header .number-product-cart{
     position: absolute;
     min-height: 19px;
-    min-width: 14px;
+    min-width: 6px;
     padding: 1px 5px;
     background-color: rgb(235, 235, 235);
     font-size: 12px;
@@ -980,10 +980,6 @@ li {
     font-weight: 550;
     font-size: 17px;
     margin-left: 0px;
-}
-
-#cart .cart-product-content h4:hover {
-    opacity: 0.6;
 }
 
 #cart .product-content {
