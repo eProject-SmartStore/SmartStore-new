@@ -36,7 +36,7 @@ btnWishlist.forEach(function(btn) {
 
 showWishListProduct_Page()
 wishDelete()
-
+showCountWishProduct()
 
 function showCountWishProduct() {
     // var wishList =sessionStorage.getItem("wishListProduct")

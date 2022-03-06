@@ -349,6 +349,21 @@ ul{
     padding: 10px;
 }
 
-#footer{
+.wrapper_tabcontent .download {
+    max-width: 323px;
     margin: 0 auto;
 }
+
+.wrapper_tabcontent .download a {
+    font-weight: 550;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    padding: 5px;
+    display: block;
+}
+
+.wrapper_tabcontent .download a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
