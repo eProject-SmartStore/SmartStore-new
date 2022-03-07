@@ -80,19 +80,7 @@ showCountCartProduct()
 function showCountCartProduct() {
     document.querySelector("#header .m-basket").innerHTML = cartListProduct.length
 }
-// var cartNumber = [];
-// function showCountCartProduct() {
-//     var cartItem = document.querySelectorAll('.cart-list tbody tr').length
-//     console.log(cartItem)
-    
-//     var productArrayNumber = [cartItem]
-//     cartNumber.push(productArrayNumber);
-//     sessionStorage.setItem("cartNumber", JSON.stringify(cartNumber))
 
-//     console.log(cartNumber)
-    
-//     document.querySelector("#header .m-basket").innerHTML = cartNumber.number
-// }
 
 
 function showCartListProduct_Page() {
