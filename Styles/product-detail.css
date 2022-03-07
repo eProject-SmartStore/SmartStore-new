@@ -37,7 +37,7 @@ ul{
     margin: 2em auto;
     padding: 2.5em 0;
     min-width: 900px;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -60,7 +60,7 @@ ul{
 .photo-main {
     border-radius: 6px 6px 0 0;
     background-color: #e5e5e5;
-    background: radial-gradient(#d7d7d5, #A9A9A9);
+    background: radial-gradient(#d7d7d5, #cecece);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .photo-main .controls {
@@ -74,9 +74,9 @@ ul{
 }
 .photo-main img {
     position: absolute;
-    left: -3.5em;
-    border-radius: 10px;
-    top: 2em;
+    left: -2.75em;
+    border-radius: 6px;
+    top: 2.5em;
     max-width: 110%;
     filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
 }
@@ -195,6 +195,7 @@ ul{
 }
 
 .product-small-img img{
+    border-radius: 3px;
     height: 50px;
     margin: 2px 1em;
     cursor: pointer;
@@ -250,6 +251,7 @@ ul{
     margin-top: 20px;
 }
 .tablinks {
+    background-color: #ccc;
     border: none;
     outline: none;
     cursor: pointer;
@@ -290,7 +292,6 @@ ul{
 }
 #form1 {
     width: 600px;
-    background: #fff;
     margin: 0 auto;
 }
 #form1 input[type=text] {
@@ -301,7 +302,7 @@ ul{
     display: block;
     line-height: 1.2;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 6px;
     margin-bottom: 10px;
     height: 50px;
     padding: 0 20px 0 23px;
@@ -324,7 +325,7 @@ ul{
     background-color: #222222;
     height: 42px;
     padding: 5px 20px;
-    border-radius: 21px;
+    border-radius: 6px;
     font-size: 14px;
     text-transform: uppercase;
     color: #A9A9A9;
@@ -339,27 +340,59 @@ ul{
     background:#CC4949;
     transition: all .5s;
 }
+.wrapper_tabcontent {
+    background-color: rgb(247, 247, 247);
+}
 
 .text--product{
-    text-align: center;
+    border-radius: 6px;
     margin: auto;
     width: 60%;
-    border: 3px solid #A9A9A9;
-    border-radius: 30px;
     padding: 10px;
 }
 
 .wrapper_tabcontent .download {
     max-width: 323px;
-    margin: 0 auto;
+    margin-left: 14px;
 }
-
+.text--product {
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(223, 223, 223, 0.5);
+}
 .wrapper_tabcontent .download a {
     font-weight: 550;
-    font-size: 1.2rem;
+    font-size: 17px;
     text-decoration: underline;
     padding: 5px;
     display: block;
+} 
+
+.text-detail-content {
+    margin: 15px 5px;
+    display: flex;
+}
+
+.content-title-detail {
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+.content-detail {
+    font-size: 17px;
+    max-width: 760px;
+    justify-content: left;
+    display: inline-block;
+}
+
+.p-b-7 {
+    padding-bottom: 7px;
+    display: block;
+}
+
+.text-detail-content-s {
+    margin: 5px 40px 15px;
 }
 
 .wrapper_tabcontent .download a:hover {
