@@ -39,20 +39,8 @@ wishDelete()
 showCountWishProduct()
 
 function showCountWishProduct() {
-    // var wishList =sessionStorage.getItem("wishListProduct")
-    // var wishListProduct = JSON.parse(wishList)
     document.querySelector("#header .m-favourites").innerHTML = wishListProduct.length
 }
-
-
-// function addWish() {
-//     var wishProduct = ""
-//     for (let i = 0; i < wishListProduct.length; i++) {
-//         wishProduct += '<tr><td><div class="cart-product-content"><img src="'+ wishListProduct[i][0] +'" width="100px" height="100px" alt=""><div class="product-content"><a href=""><h4 class="wish-title">' + wishListProduct[i][1] + '</h4></a><span>Estimated delivery within 5 working days</span><div class="product-content-btn"><button class="btn-remove" type="button">Remove</button></div></div></div></td><td><div class="cart-avai-content"><span style="opacity: 0.7;">20 in stock</span></div></td><td class="unit-price"><p><span>$</span>' + wishListProduct[i][2] + '</p></td><td class="unit-discount"><p>$0.00</p></td><td><button class="add-cart"">ADD TO CART</button></td></tr>'
-//     }
-
-//     document.querySelector(".wish-list tbody").innerHTML = wishProduct
-// }
 
 function showWishListProduct_Page() {
     var wishList =sessionStorage.getItem("wishListProduct")

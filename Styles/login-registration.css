@@ -126,7 +126,9 @@ body {
     flex-shrink: 0;
     -webkit-filter: none;
     filter: none;
-    /* box-shadow: 0 0 4px rgb(0 0 0 / 14%) */
+}
+
+.input--ss {
     margin-bottom: 30px;
 }
 
@@ -171,4 +173,15 @@ body {
 #smartStore-body .form-tag .newTo a:hover {
     overflow: 1;
     text-decoration:underline;
+}
+
+
+element.style {
+}
+.form-message {
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+    color: rgb(233, 60, 60);
+    text-align: left;
 }

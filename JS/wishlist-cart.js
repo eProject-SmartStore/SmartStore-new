@@ -1,4 +1,4 @@
-var cartListProduct = [];
+var cartListProduct = new Array()
 
 const btnCartList = document.querySelectorAll('.wish-list .add-cart')
 btnCartList.forEach(function(btn) {
