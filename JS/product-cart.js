@@ -1,78 +1,44 @@
-var checkOutProduct = []
+var checkOutProduct = new Array()
 
-var checkOutProductImgArray = []
-var checkOutProductNameArray = []
-var checkOutQuantityArray = []
-var checkOutProductQuantityArray = []
-checkOutClick()
 function checkOutClick() {
     var btnCheckout = document.querySelector('#check-out')
     var product = btnCheckout.parentElement
     var product2 = product.parentElement
 
     var productItem = product2.querySelectorAll('.cart-list tbody tr')
-    
+
     for (let i = 0; i < productItem.length; i++) {
         var productImg = productItem[i].querySelector('.cart-list img').src
         var productName = productItem[i].querySelector('.cart-list h4').innerHTML
         var productQuantity = productItem[i].querySelector('.cart-list input').value
         var productPrice = productItem[i].querySelector('.cart-list .price-value').innerHTML
 
-        var productImgArray00000 = [productImg]
-
-        var productImgArray = productImgArray00000.push(productImg)
-        var productNameArray = [productName]
-        var checkOutQuantityArray = [productQuantity]
-        var productQuantityArray = [productPrice]
-    
-        checkOutProductImgArray.push(productImgArray);
-        sessionStorage.setItem("checkOutProductImgArray", JSON.stringify(checkOutProductImgArray))
-    
-        checkOutProductNameArray.push(productNameArray);
-        sessionStorage.setItem("checkOutProductNameArray", JSON.stringify(checkOutProductNameArray))
-    
-        checkOutQuantityArray.push(productQuantityArray);
-        sessionStorage.setItem("checkOutQuantityArray", JSON.stringify(checkOutQuantityArray))
-    
-        checkOutProductQuantityArray.push(productQuantityArray);
-        sessionStorage.setItem("checkOutProductQuantityArray", JSON.stringify(checkOutProductQuantityArray))
-        
-        
+        var productArray = new Array({productImg, productName, productQuantity, productPrice})
+        checkOutProduct.push(productArray);
+        sessionStorage.setItem("checkOutProduct", JSON.stringify(checkOutProduct))
     }
-    console.log(productImgArray)
+    showCheckOutProduct_Page()
 
-
-
-    // var productImgArray = [productImg]
-    // var productNameArray = [productName]
-    // var checkOutQuantityArray = [productQuantity]
-    // var productQuantityArray = [productPrice]
-
-    // checkOutProductImgArray.push(productImgArray);
-    // sessionStorage.setItem("checkOutProductImgArray", JSON.stringify(checkOutProductImgArray))
-
-    // checkOutProductNameArray.push(productNameArray);
-    // sessionStorage.setItem("checkOutProductNameArray", JSON.stringify(checkOutProductNameArray))
-
-    // checkOutQuantityArray.push(productQuantityArray);
-    // sessionStorage.setItem("checkOutQuantityArray", JSON.stringify(checkOutQuantityArray))
-
-    // checkOutProductQuantityArray.push(productQuantityArray);
-    // sessionStorage.setItem("checkOutProductQuantityArray", JSON.stringify(checkOutProductQuantityArray))
-
-
-
-
-
-
-
-
-
-
-    var productArray = []
-
-    checkOutProduct.push(productArray);
-    sessionStorage.setItem("checkOutProduct", JSON.stringify(checkOutProduct))
 }
+// console.log(document.querySelector(".product-check-item"))
+console.log(document.querySelector(".total-number"))
+checkOutClick()
+showCheckOutProduct_Page()
 
-console.log(checkOutProductImgArray[1])
+function showCheckOutProduct_Page() {
+    var checkOutList = sessionStorage.getItem("checkOutProduct")
+    var checkOutProduct = JSON.parse(checkOutList)
+    var checkOutProductItem = ""
+    var subTotal = 0;
+    for (let i = 0; i < checkOutProduct.length; i++) {
+        var total = checkOutProduct[i][0].productQuantity*checkOutProduct[i][0].productPrice
+        subTotal +=  total
+        checkOutProductItem += '<div class="product-box box-form"><img src="'+ checkOutProduct[i][0].productImg +'" width="90px" height="90px" alt=""><div class="product-title"><h3>'+checkOutProduct[i][0].productName +'</h3><Span>Quantity:</Span><span class="number-item">'+ checkOutProduct[i][0].productQuantity +'</span></div><div class="product-price">$<span>'+ checkOutProduct[i][0].productPrice +'</span></div></div>'
+    }
+
+    console.log(subTotal)
+
+    document.querySelector(".product-check-item").innerHTML = checkOutProductItem
+    document.querySelector(".total-number").innerHTML = subTotal
+
+}

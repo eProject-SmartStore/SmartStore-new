@@ -164,11 +164,22 @@
                             $<span>119</span>
                         </div>
                     </div>
+                    <div class="product-box box-form">
+                        <img src="img/anh03.jpg" width="90px" height="90px" alt="">
+                        <div class="product-title">
+                            <h3>Goran Dining Table</h3>
+                            <Span>Quantity:</Span> 
+                            <span class="number-item">1</span>
+                        </div>
+                        <div class="product-price">
+                            $<span>119</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="product-check-total">
                     <div class="box-form">
                         <h3>Subtotal</h3>
-                        <div class="total">$<span>119</span></div>
+                        <div class="total">$<span class="total-number">119</span></div>
                     </div>
                 </div>
             </div>
@@ -302,8 +313,6 @@
         const modalContainer = document.querySelector('.js-modal-container')
         const modalClose = document.querySelector('.js-modal-close');
 
-        console.log(buyBtns, modal, modalContainer, modalClose)
-
         function showBuyTickets() {
             modal.classList.add('open');
          }
@@ -329,7 +338,6 @@
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
-          // Mong muốn của chúng ta
           Validator({
             form: '#form-1',
             formGroupSelector: '.form-group',
