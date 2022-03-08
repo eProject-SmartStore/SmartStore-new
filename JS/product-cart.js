@@ -1,3 +1,5 @@
+
+
 var checkOutProduct = new Array()
 
 function checkOutClick() {
@@ -20,8 +22,7 @@ function checkOutClick() {
     showCheckOutProduct_Page()
 
 }
-// console.log(document.querySelector(".product-check-item"))
-console.log(document.querySelector(".total-number"))
+
 checkOutClick()
 showCheckOutProduct_Page()
 
