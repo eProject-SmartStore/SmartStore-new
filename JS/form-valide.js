@@ -161,7 +161,7 @@ Validator.isDate = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
-            var regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
+            var regex = / ^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
             return regex.test(value) ? undefined :  message || 'Please re-enter';
         }
     };

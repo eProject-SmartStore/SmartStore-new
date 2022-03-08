@@ -2,6 +2,7 @@
 
 var checkOutProduct = new Array()
 
+
 function checkOutClick() {
     var btnCheckout = document.querySelector('#check-out')
     var product = btnCheckout.parentElement
@@ -36,8 +37,6 @@ function showCheckOutProduct_Page() {
         subTotal +=  total
         checkOutProductItem += '<div class="product-box box-form"><img src="'+ checkOutProduct[i][0].productImg +'" width="90px" height="90px" alt=""><div class="product-title"><h3>'+checkOutProduct[i][0].productName +'</h3><Span>Quantity:</Span><span class="number-item">'+ checkOutProduct[i][0].productQuantity +'</span></div><div class="product-price">$<span>'+ checkOutProduct[i][0].productPrice +'</span></div></div>'
     }
-
-    console.log(subTotal)
 
     document.querySelector(".product-check-item").innerHTML = checkOutProductItem
     document.querySelector(".total-number").innerHTML = subTotal

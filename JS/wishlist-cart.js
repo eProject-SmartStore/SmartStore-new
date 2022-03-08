@@ -1,6 +1,6 @@
-var cartListProduct = new Array()
+var cartListProduct = []
 
-const btnCartList = document.querySelectorAll('.wish-list .add-cart')
+const btnCartList = document.querySelectorAll('.wish-list tbody')
 btnCartList.forEach(function(btn) {
     btn.addEventListener("click", function(event) {
         var btnItem = event.target
@@ -17,20 +17,22 @@ btnCartList.forEach(function(btn) {
         
         
 
-        var check = 0
-        for (var i = 0; i < cartListProduct.length; i++) {
-            if ( cartListProduct[i][1] == productName) {
-                check = 1; 
-                productNumber +=  cartListProduct[i][4] 
-                cartListProduct[i][4] = productNumber
-                break
-            }
-        }
-        if (check == 0) {
-            cartListProduct.push(productArray);
-            sessionStorage.setItem("cartListProduct", JSON.stringify(cartListProduct))
-        }
+        // var check = 0
+        // for (var i = 0; i < cartListProduct.length; i++) {
+        //     if ( cartListProduct[i][1] == productName) {
+        //         check = 1; 
+        //         productNumber +=  cartListProduct[i][4] 
+        //         cartListProduct[i][4] = productNumber
+        //         break
+        //     }
+        // }
+        // if (check == 0) {
+        //     cartListProduct.push(productArray);
+        //     sessionStorage.setItem("cartListProduct", JSON.stringify(cartListProduct))
+        // }
 
+        cartListProduct.push(productArray);
+        sessionStorage.setItem("cartListProduct", JSON.stringify(cartListProduct))
         product.remove()
     })
 })
@@ -40,6 +42,8 @@ btnCartDetail.forEach(function(btn) {
     btn.addEventListener("click", function(event) {
         var btnItem = event.target
         var product = btnItem.parentElement.parentElement
+
+        console.log(product)
 
         var productImg = product.querySelector('.product .photo-main img').src
         var productName = product.querySelector('.product .product__info h1').innerHTML
@@ -58,7 +62,6 @@ btnCartDetail.forEach(function(btn) {
                 check = 1; 
                 productNumber +=  cartListProduct[i][4] 
                 cartListProduct[i][4] = productNumber
-                // cartListProduct.push(productArray);
                 sessionStorage.setItem("cartListProduct", JSON.stringify(cartListProduct))
                 break
             }
