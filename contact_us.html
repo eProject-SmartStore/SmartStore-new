@@ -132,32 +132,36 @@
                 <p>For warranty information, or to purchase replacement parts/keys, please contact a local authorized dealer.</p>
             </div>
             <div class="contact-content-form">
-                <form action="">
+                <form action=""  method="POST" class="form" id="form-1">
                     <div class="box">
-                        <div class="contact-form-input">
-                            <label for="">FIRST NAME</label> <br>
-                            <input type="text">
+                        <div class="form-group contact-form-input">
+                            <label for="first-name" class="form-label">FIRST NAME</label> <br>
+                            <input id="first-name" name="first-name" type="text" placeholder="First Name" class="form-control">
+                            <span class="form-message"></span>
                         </div>
-                        <div class="contact-form-input">
-                            <label for="">LAST NAME</label> <br>
-                            <input type="text">
+                        <div class="form-group contact-form-input">
+                            <label for="first-name" class="form-label">LAST NAME</label> <br>
+                            <input id="last-name" name="last-name" type="text" placeholder="Last Name" class="form-control">
+                            <span class="form-message"></span>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="contact-form-input">
-                            <label for="">EMAIL ADDRESS *</label> <br>
-                            <input type="email" required>
+                        <div class="form-group contact-form-input">
+                            <label for="first-name" class="form-label">EMAIL ADDRESS *</label> <br>
+                            <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                            <span class="form-message"></span>
                         </div>
-                        <div class="contact-form-input">
-                            <label for="">PHONE *</label> <br>
-                            <input type="text">
+                        <div class="form-group contact-form-input">
+                            <label for="first-name" class="form-label">PHONE *</label> <br>
+                            <input id="phone" name="phone" type="tel" placeholder="Phone number" class="form-control">
+                            <span class="form-message"></span>
                         </div>
                     </div>
                     <div>
                         <label for="">Messenger</label> <br>
                         <textarea name="text" id="" cols="98" rows="6"></textarea>
                     </div>
-                    <button class="contact-btn" type="submit">Submit</button>
+                    <button class="contact-btn form-submit" type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -336,6 +340,57 @@
             </div>
         </div>
     </div>
+
+    <script src="JS/form-valide.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta
+          Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#first-name', 'Please enter first name'),
+              Validator.isRequired('#last-name', 'Please enter last name'),
+              Validator.isPhone('#phone'),
+              Validator.isEmail('#email'),
+              Validator.isRequired('#city', 'Please enter city'),
+              Validator.isRequired('#district', 'Please enter district'),
+              Validator.isRequired('#detail-address', 'Please enter details address'),
+              Validator.minLength('#card-number', 10),
+              Validator.isRequired('#name-in-card', 'Please enter name in card'),
+              Validator.isDate('#mm-yy'),
+              Validator.isCcv('#ccv'),
+              Validator.isRequired('#password_confirmation'),
+              Validator.isConfirmed('#password_confirmation', function () {
+                return document.querySelector('#form-1 #password').value;
+              }, '')
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+  
+  
+          Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+  
+    </script>
+
 
 
     <script src="JS/product-wishlist.js"></script>

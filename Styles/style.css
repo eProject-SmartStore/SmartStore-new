@@ -1419,3 +1419,230 @@ li {
     text-decoration: underline;
 }
 
+
+
+/* check-box */
+
+#check-box {
+    width: 1200px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 0 20px;
+    display: block;
+}
+
+#check-box .check-box {
+    display: flex;
+}
+
+#check-box .form-check {
+    width: 60%;
+    margin-right: 0px;
+    border-right: 1px solid #bbb;
+}
+
+#check-box .product-check  {
+    width: 35%;
+}
+
+
+#check-box  .box-form {
+    display: flex;
+}
+
+#check-box .form-group {
+    margin: 10px 20px 10px 0px;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+#check-box h4 {
+    font-size: 2.0rem;
+}
+
+#check-box .box-form input{
+    background: #fff;
+    border: 1px solid #9b9b9b;
+    transition: all .3s ease-in;
+    padding: 0 2.8125rem 0 0.9375rem;
+    height: 3.125rem;
+    line-height: normal;
+    border-radius: 0;
+    width: 320px;
+}
+
+#check-box .box-form-one input{
+    background: #fff;
+    border: 1px solid #9b9b9b;
+    transition: all .3s ease-in;
+    padding: 0 2.8125rem 0 0.9375rem;
+    height: 3.125rem;
+    line-height: normal;
+    border-radius: 0;
+    width: 660px;
+}
+
+#check-box .form-submit {
+    outline: none;
+    background-color: #747474;
+    margin-top: 12px;
+    padding: 12px 16px;
+    /* font-weight: 600; */
+    color: #fff;
+    border: none;
+    width: 660px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#check-box .form-submit:hover {
+    opacity: 0.7;
+}
+
+#check-box .product-check {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 10px rgba(29, 29, 29, 0.3);
+    height: 100%;
+}
+
+#check-box .product-check .product-check-item > h3 {
+    display: block;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 10px 0 5px;
+    margin: 0px 18px ;
+}
+
+#check-box .product-check img {
+    margin-top: 5px;
+}
+
+#check-box .product-box {
+    margin: 15px 18px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+#check-box .product-title{
+    margin-left: 0;
+}
+
+#check-box .product-price{
+    font-size: 20px;
+    padding-top: 30px;
+    font-weight: 550;
+}
+
+#check-box .product-check-total h3{
+    margin: 0  0 10px 30px;
+}
+
+#check-box .total {
+    font-size: 20px;
+    text-align: right;
+    font-weight: 550;
+    margin: 0 20px 10px 224px;
+}
+
+.form-message {
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+    color: rgb(233, 60, 60);
+}
+
+
+
+/* ---- */
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(29, 29, 29, 0.3);
+}
+.modal.open {
+    display: flex !important;
+    z-index: 1000;
+}
+
+
+.modal-container{
+    position: relative;
+    background: #e7e7e7;
+    margin-top: -25px;
+    width: 670px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    animation: modalFaceIn ease 0.5s;
+}
+.modal-header{
+    background: #e7e7e7;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-header img {
+    margin-top: 50px;
+}
+.modal-heading-icon{
+    margin: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal h2{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+}
+.modal .modal-span {
+    text-align: center;
+    max-width: 453px;
+}
+
+
+.mg-b {
+    margin-bottom: 10px;
+}
+.border {
+    padding: 0 30px;
+}
+
+.logo-modal {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.logo-modal img {
+    margin-left: 230px;
+    margin-right: 0px;
+    padding-top: 10px;
+}
+
+.logo-modal .logo-title {
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    border-left:1px solid #000 ;
+}
