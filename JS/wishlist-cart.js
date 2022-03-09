@@ -14,22 +14,6 @@ btnCartList.forEach(function(btn) {
         
         var productArray = [productImg, productName, productPriceUnit, productPriceDiscount, productNumber]
         
-        
-        
-
-        // var check = 0
-        // for (var i = 0; i < cartListProduct.length; i++) {
-        //     if ( cartListProduct[i][1] == productName) {
-        //         check = 1; 
-        //         productNumber +=  cartListProduct[i][4] 
-        //         cartListProduct[i][4] = productNumber
-        //         break
-        //     }
-        // }
-        // if (check == 0) {
-        //     cartListProduct.push(productArray);
-        //     sessionStorage.setItem("cartListProduct", JSON.stringify(cartListProduct))
-        // }
 
         cartListProduct.push(productArray);
         sessionStorage.setItem("cartListProduct", JSON.stringify(cartListProduct))
